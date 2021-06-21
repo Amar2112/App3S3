@@ -5,12 +5,14 @@ public class CoucheTransportServeur {
     private String listeDePaquet[];
     private CoucheLiaison coucheLiaison;
 
-    public CoucheTransportServeur(CoucheLiaison liaison){
+    public CoucheTransportServeur(){
         dernierPaquetRecu = -1;
         compteurDemande = 1;
-        coucheLiaison = liaison;
     }
 
+    public void lierAvecLiaison(CoucheLiaison liaison){
+        coucheLiaison = liaison;
+    }
     /**
      * Coupe la connexion avec le client
      */
