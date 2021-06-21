@@ -107,10 +107,8 @@ public class CoucheLiaison {
     }
 
     public String getReponseClient(){
-        if(stateConnexion){
-           return reponse;
-        }
-        return null;
+        return reponse;
+
     }
 
     /**

@@ -1,11 +1,14 @@
 public class CoucheTransport {
 
     private CoucheLiaison liaison;
+    private String adresse;
+    private String[] listePaquetsAEnvoyer;
 
     public boolean reception;
 
     public CoucheTransport(){
         reception = false;
+        adresse = new String();
     }
 
     public void lierCoucheLiaison(CoucheLiaison liaison){
@@ -17,8 +20,12 @@ public class CoucheTransport {
      * @param fichierNom
      */
     public void envoiLiaison(String paquetEntrant, String fichierNom, String adresse) {
+        this.adresse = adresse;
+
+
         String [] paquetsAEnvoyer = paquetFragmenteEntete(paquetEntrant,fichierNom);
 
+        listePaquetsAEnvoyer = paquetsAEnvoyer;
         for(int i = 0; i < paquetsAEnvoyer.length;i++){
             System.out.println(paquetsAEnvoyer[i]);
             liaison.envoyerPaquetServeur(paquetsAEnvoyer[i], adresse);
@@ -28,6 +35,11 @@ public class CoucheTransport {
 
     public void retourLiaison(String donnees){
         System.out.println(donnees);
+        if(Integer.parseInt(donnees.substring(11,12)) == 1){
+            liaison.envoyerPaquetServeur(listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1], adresse);
+        }else{
+
+        }
     }
 
     /**

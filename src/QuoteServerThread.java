@@ -58,7 +58,6 @@ public class QuoteServerThread extends Thread {
 
 
     public void run() {
-        int compteur = 0;
         boolean finDeLaTransmission = true;
         try{
 
@@ -72,17 +71,14 @@ public class QuoteServerThread extends Thread {
                 liaison.recevoirPaquet(new String(packet.getData(),0,packet.getLength()));
 
                 String donneesEnvoyer = liaison.getReponseClient();
+                    if(donneesEnvoyer != null){
+                        socketEnvoi.connect(packet.getAddress(), 25501);
+                        byte [] transformationDonnees = donneesEnvoyer.getBytes();
+                        DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
+                        socketEnvoi.send(paquetEnvoyer);
+                        System.out.println("Après Envoi -------------------------------");
+                    }
 
-                socketEnvoi.connect(packet.getAddress(), 25501);
-                byte [] transformationDonnees = donneesEnvoyer.getBytes();
-                DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
-                socketEnvoi.send(paquetEnvoyer);
-                System.out.println("Après Envoi -------------------------------");
-
-                if(Integer.parseInt(new String(packet.getData(),0,packet.getLength()).substring(4,8)) == compteur+1){
-                    finDeLaTransmission = false;
-                }
-                compteur ++;
             }
 
 
