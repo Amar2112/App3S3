@@ -39,7 +39,8 @@ public class CoucheLiaison {
      */
     public String populerPaquet(String paquetEntrant)
     {
-       String paquetSortant = paquetEntrant + checkSum(paquetEntrant.getBytes()) ;
+       String paquetSortant = paquetEntrant + checkSum(paquetEntrant.getBytes());
+        System.out.println("Avec le crc " + paquetSortant);
         return paquetSortant;
     }
 
@@ -53,12 +54,16 @@ public class CoucheLiaison {
 
         //paquetEntrant.length()
         String donnes = paquetEntrant.substring(0, paquetEntrant.length()-10);
-        if(!compareCRC(donnes,crc)){
-            transport.getFromCoucheLiaison(paquetEntrant);
-            //System.out.println(donnes);
+
+        if(compareCRC(donnes,crc)){
+            System.out.println("Avec le crc" + donnes);
+            transport.getFromCoucheLiaison(donnes);
+
+        }else{
+            transport.demandeRenvoi(paquetEntrant);
         }
 
-        transport.demandeRenvoi(paquetEntrant);
+
     }
     /**
      * Envoi le paquet au serveur
@@ -69,8 +74,6 @@ public class CoucheLiaison {
             //Ajoute l'entête au paquet
             paquetSortant = populerPaquet(paquetSortant);
             physique.EnvoiServeur(paquetSortant,adresseString);
-
-
     }
 
     public void envoiReponseTransport (String donnees)
@@ -80,7 +83,7 @@ public class CoucheLiaison {
     }
 
     public void envoiReponseAuClient(String paquet){
-
+        System.out.println("Reponse à renvoyer"+paquet);
         reponse = paquet;
     }
 
@@ -96,18 +99,27 @@ public class CoucheLiaison {
      * @param bytes
      * @return
      */
-    public long checkSum(byte[] bytes) {
+    public String checkSum(byte[] bytes) {
         Checksum checksum = new CRC32();
 
         // update the current checksum with the specified array of bytes
         checksum.update(bytes, 0, bytes.length);
 
+        //Padding de tout
+        String stringCheckSum = "";
+        if(10 - String.valueOf(checksum.getValue()).length() != 0){
+            String nombreDeDigitsValeurCheckSum = "%0" + (10) + "d";
+            stringCheckSum = String.format(nombreDeDigitsValeurCheckSum, checksum.getValue());
+        }
+        else{
+            stringCheckSum =  String.valueOf(checksum.getValue());
+        }
         // get the current checksum value
-        return checksum.getValue();
+        return stringCheckSum;
     }
 
     public Boolean compareCRC(String donnees, String crcClient){
-        if(crcClient.equals( String.valueOf(checkSum(donnees.getBytes())))){
+        if(crcClient.equals(checkSum(donnees.getBytes()))){
             return true;
         }
         return false;

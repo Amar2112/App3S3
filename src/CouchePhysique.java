@@ -55,7 +55,7 @@ public class CouchePhysique {
             socketEnvoi.close();
         }
         //socketReception.
-        liaison.envoiReponseTransport(new String(packetReception.getData(), 0 , packetReception.getData().length));
+        liaison.envoiReponseTransport(new String(packetReception.getData(), 0 , packetReception.getLength()));
 
     }
 }

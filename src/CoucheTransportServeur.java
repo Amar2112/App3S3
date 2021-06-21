@@ -6,7 +6,7 @@ public class CoucheTransportServeur {
     private CoucheLiaison coucheLiaison;
 
     public CoucheTransportServeur(){
-        dernierPaquetRecu = -1;
+        dernierPaquetRecu = 0;
         compteurDemande = 1;
     }
 
@@ -26,6 +26,7 @@ public class CoucheTransportServeur {
      */
     public void demandeRenvoi(String paquetDemande){
         String renvoi = paquetDemande.substring(0,11) + "1" + "Le paquet doit être renvoye";
+        //System.out.println("Allo");
         coucheLiaison.envoiReponseAuClient(renvoi);
     }
 
@@ -35,9 +36,11 @@ public class CoucheTransportServeur {
      */
     public void demandeAcceptee(String paquetAccepte){
 
-        if(listeDePaquet[Integer.parseInt(paquetAccepte.substring(0,4))] != null)
-        listeDePaquet[Integer.parseInt(paquetAccepte.substring(0,4))] = paquetAccepte;
+
+        if(listeDePaquet[Integer.parseInt(paquetAccepte.substring(0,4)) -1] == null)
+        listeDePaquet[Integer.parseInt(paquetAccepte.substring(0,4)) -1] = paquetAccepte;
         String acknowledge = paquetAccepte.substring(0,11) + "0" + "Le paquet a ete reçu" ;
+        System.out.println("Yes" +  listeDePaquet[Integer.parseInt(paquetAccepte.substring(0,4)) -1 ] );
         coucheLiaison.envoiReponseAuClient(acknowledge);
 
     }
@@ -49,10 +52,17 @@ public class CoucheTransportServeur {
     public void TraiterPaquetEnvoi(String paquet){
         int paquetActuel = Integer.parseInt(paquet.substring(0,4));
 
-        if( paquetActuel - dernierPaquetRecu == 1){
+        System.out.println("Numero "+ paquetActuel);
+        System.out.println("Numero2 "+ dernierPaquetRecu);
+
+        System.out.println(paquet);
+
+        if( (paquetActuel - dernierPaquetRecu) == 1){
+
             demandeAcceptee(paquet);
             dernierPaquetRecu = paquetActuel;
         }else{
+            System.out.println("Allo");
             demandeRenvoi(paquet);
         }
     }
@@ -79,7 +89,9 @@ public class CoucheTransportServeur {
      */
     public void getFromCoucheLiaison(String paquet){
         listeDePaquet = new String[Integer.parseInt(paquet.substring(4,8))];
+
         if(Integer.parseInt(paquet.substring(11,12)) == 0){
+           // System.out.println(paquet);
             TraiterPaquetEnvoi(paquet);
         }
         else{
