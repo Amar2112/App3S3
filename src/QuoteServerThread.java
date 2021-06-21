@@ -30,14 +30,17 @@
  */
 import java.io.*;
 import java.net.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class QuoteServerThread extends Thread {
 
     protected DatagramSocket socket = null;
+    protected DatagramSocket socketEnvoi = null;
     protected BufferedReader in = null;
     protected boolean moreQuotes = true;
-    private CoucheLiaison liaison = new CoucheLiaison();
+    private CoucheLiaison liaison;
+    private CoucheTransportServeur transportServeur;
 
     public QuoteServerThread() throws IOException {
         this("QuoteServerThread");
@@ -46,76 +49,45 @@ public class QuoteServerThread extends Thread {
     public QuoteServerThread(String name) throws IOException {
         super(name);
         socket = new DatagramSocket(25500);
-
+        socketEnvoi = new DatagramSocket();
+        liaison = new CoucheLiaison();
+        transportServeur = new CoucheTransportServeur();
+        liaison.lierCoucheTransportServeur(transportServeur);
+        transportServeur.lierAvecLiaison(liaison);
     }
 
+
     public void run() {
+
         try{
 
         byte[] buf = new byte[256];
             // receive request
             DatagramPacket packet = new DatagramPacket(buf, buf.length);
-            socket.receive(packet);
-            String received = new String(packet.getData(), 0, packet.getLength());
-            int totalDePaquet = Integer.valueOf(received.substring(4,8));
-            String paquetsRecus[] = new String[totalDePaquet];
-            paquetsRecus[0] = received;
-            System.out.println(totalDePaquet);
-            System.out.println(paquetsRecus[0]);
-
-            for(int i = 1; i < totalDePaquet; i++){
+            while(liaison.getStateConnexion() == true){
+                System.out.println(liaison.getStateConnexion());
                 socket.receive(packet);
-                paquetsRecus[i] = new String(packet.getData(), 0, packet.getLength());
-                System.out.println(paquetsRecus[i]);
-                liaison.recevoirPaquet(paquetsRecus[i]);
+                liaison.recevoirPaquet(new String(packet.getData(),0,packet.getLength()));
+
+                String donneesEnvoyer = liaison.getReponseClient();
+                System.out.println(donneesEnvoyer);
+                if( donneesEnvoyer != null){
+                    socketEnvoi.connect(packet.getAddress(), 25501);
+                    byte [] transformationDonnees = donneesEnvoyer.getBytes();
+                    DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
+                    socketEnvoi.send(paquetEnvoyer);
+                }
             }
 
 
         }catch (IOException i){
+            socket.close();
+            socketEnvoi.close();
             i.printStackTrace();
+
         }
-       /* while (moreQuotes) {
-            try {
 
-
-                // receive request
-                DatagramPacket packet = new DatagramPacket(buf, buf.length);
-                socket.receive(packet);
-
-                // figure out response
-                String dString = null;
-                if (in == null)
-                    dString = new Date().toString();
-                else
-                    dString = getNextQuote();
-
-                buf = dString.getBytes();
-
-                // send the response to the client at "address" and "port"
-                InetAddress address = packet.getAddress();
-                int port = packet.getPort();
-                packet = new DatagramPacket(buf, buf.length, address, port);
-                socket.send(packet);
-            } catch (IOException e) {
-                e.printStackTrace();
-                moreQuotes = false;
-            }
-        }*/
+        socketEnvoi.close();
         socket.close();
     }
-
-    /*protected String getNextQuote() {
-        String returnValue = null;
-        try {
-            if ((returnValue = in.readLine()) == null) {
-                in.close();
-                moreQuotes = false;
-                returnValue = "No more quotes. Goodbye.";
-            }
-        } catch (IOException e) {
-            returnValue = "IOException occurred in server.";
-        }
-        return returnValue;
-    }
-    */
 }

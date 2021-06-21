@@ -8,18 +8,30 @@ import java.util.zip.Checksum;
 import java.lang.Integer;
 
 public class CoucheLiaison {
-
-
-
     private Boolean stateConnexion;
     private CoucheTransportServeur transport;
+    private CoucheTransport retour;
+    private CouchePhysique physique;
+    private String reponse;
+    private String paquetSortant;
 
     public CoucheLiaison(){
-        transport = new CoucheTransportServeur(this);
+
         stateConnexion = true;
+        reponse = null;
     }
 
+    public void lierCouchePhysique(CouchePhysique physique){
+        this.physique = physique;
+    }
 
+    public void lierCoucheTransport(CoucheTransport transport){
+        this.retour = transport;
+    }
+
+    public void lierCoucheTransportServeur(CoucheTransportServeur serveur){
+        this.transport = serveur;
+    }
     /**
      * Ajoute le checkSum dans le paquet Sortant
      * @param paquetEntrant
@@ -28,7 +40,6 @@ public class CoucheLiaison {
     public String populerPaquet(String paquetEntrant)
     {
        String paquetSortant = paquetEntrant + checkSum(paquetEntrant.getBytes()) ;
-
         return paquetSortant;
     }
 
@@ -44,6 +55,7 @@ public class CoucheLiaison {
         String donnes = paquetEntrant.substring(0, paquetEntrant.length()-10);
         if(!compareCRC(donnes,crc)){
             transport.getFromCoucheLiaison(paquetEntrant);
+            //System.out.println(donnes);
         }
 
         transport.demandeRenvoi(paquetEntrant);
@@ -54,27 +66,29 @@ public class CoucheLiaison {
      */
     public void envoyerPaquetServeur(String paquetSortant, String adresseString){
 
-        try{
-            DatagramSocket socket = new DatagramSocket();
-            InetAddress address = InetAddress.getByName(adresseString);
-
             //Ajoute l'entête au paquet
             paquetSortant = populerPaquet(paquetSortant);
+            physique.EnvoiServeur(paquetSortant,adresseString);
 
-            //Transformation en bytes
-            byte[] buf =  paquetSortant.getBytes();
 
-            // Envoi du paquet
-            DatagramPacket packet = new DatagramPacket(buf, buf.length, address, 25500);
-            socket.send(packet);
-            socket.close();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+    }
+
+    public void envoiReponseTransport (String donnees)
+    {
+        donnees.substring(0,donnees.length()-10);
+        retour.retourLiaison(donnees);
     }
 
     public void envoiReponseAuClient(String paquet){
 
+        reponse = paquet;
+    }
+
+    public String getReponseClient(){
+        if(stateConnexion){
+           return reponse;
+        }
+        return null;
     }
 
     /**

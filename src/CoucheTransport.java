@@ -1,26 +1,33 @@
 public class CoucheTransport {
 
+    private CoucheLiaison liaison;
+
+    public boolean reception;
+
+    public CoucheTransport(){
+        reception = false;
+    }
+
+    public void lierCoucheLiaison(CoucheLiaison liaison){
+        this.liaison = liaison;
+    }
     /**
      * Envoi à la couche de transport
      * @param paquetEntrant
      * @param fichierNom
      */
-    public void EnvoiTransport(String paquetEntrant, String fichierNom, String adresse) {
+    public void envoiLiaison(String paquetEntrant, String fichierNom, String adresse) {
         String [] paquetsAEnvoyer = paquetFragmenteEntete(paquetEntrant,fichierNom);
-        CoucheLiaison liaison = new CoucheLiaison();
 
         for(int i = 0; i < paquetsAEnvoyer.length;i++){
             System.out.println(paquetsAEnvoyer[i]);
-            try{
-                Thread.sleep(200);
-            }catch(Exception e){
-                e.printStackTrace();
-            }
-
             liaison.envoyerPaquetServeur(paquetsAEnvoyer[i], adresse);
         }
+        
+    }
 
-
+    public void retourLiaison(String donnees){
+        System.out.println(donnees);
     }
 
     /**
@@ -122,7 +129,7 @@ public class CoucheTransport {
                 enteteLongueurFichierFragment = "200";
             }
 
-            paquetsFragementesListe[i] = enteteNombrePaquetFragment + enteteNombrePaquet + enteteLongueurFichierFragment + "1" + paquetsSansEntete[i-1];
+            paquetsFragementesListe[i] = enteteNombrePaquetFragment + enteteNombrePaquet + enteteLongueurFichierFragment + "0" + paquetsSansEntete[i-1];
 
         }
 

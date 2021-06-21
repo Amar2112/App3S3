@@ -36,54 +36,30 @@ import java.util.*;
 public class QuoteClient {
 
 
-    public static void testCoucheApplication(String nomAdresse){
-        CoucheLiaison coucheLiaison = new CoucheLiaison();
-
-        // send request
-        byte[] buf = new byte[256];
-        String message = "patate";
-
-        coucheLiaison.envoyerPaquetServeur(message, nomAdresse);
-    }
-
-
     public static void main(String[] args) throws IOException {
 
-        Scanner scanner = new Scanner(System.in); // Sert pour le nom de fichier à envoyer
-        final int num_port = 25500;
-        Tests test = new Tests();
-        CoucheApplication cA = new CoucheApplication();
-        CoucheTransport cT = new CoucheTransport();
+        if (args.length != 1) {
+            System.out.println("Usage: java QuoteClient <hostname>");
+            return;
+        }
+        CouchePhysique couchePhysique = new CouchePhysique();
+        CoucheLiaison coucheLiaison = new CoucheLiaison();
+        CoucheTransport coucheTransport = new CoucheTransport();
 
-        String tester = scanner.nextLine();
-        String buffer[] = tester.split(" ");
-        File f = new File(buffer[0]);
-        cA.setName(f.getName());
-        cA.setDestinationIP(buffer[1]);
+        //Liaison de la couche liaison
+        coucheLiaison.lierCouchePhysique(couchePhysique);
+        coucheLiaison.lierCoucheTransport(coucheTransport);
 
+        //Liaison de la couche physique
+        couchePhysique.lierCoucheLiaison(coucheLiaison);
 
-        cT.EnvoiTransport(cA.lireFichier(buffer[0]),cA.getName(),cA.getDestinationIP());
-        //test.testCoucheTransport(buffer[1]);
+        //Liaison de la couche transport
+        coucheTransport.lierCoucheLiaison(coucheLiaison);
 
-        /*
-        buf = message.getBytes();
-        System.out.println(buf);
-        InetAddress address = InetAddress.getByName(args[0]);
-        //System.out.println(address);
-        DatagramPacket packet = new DatagramPacket(buf, buf.length, address, num_port);
-        socket.send(packet);
-        */
+        String message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit justo nisl, sit amet convallis lectus facilisis at. Sed ultrices lobortis dapibus. Nam scelerisque eros volutpat, cursus dui vel, feugiat nisl. Morbi diam enim, tempus vel eros sed, vestibulum blandit mi. Maecenas semper turpis.";
+        String nomFichier = "la vie va bien";
+        coucheTransport.envoiLiaison(message, nomFichier, args[0]);
 
-        /*
-        // get response
-        packet = new DatagramPacket(buf, buf.length);
-        socket.receive(packet);
-
-        // display response
-        String received = new String(packet.getData(), 0, packet.getLength());
-        System.out.println("Quote of the Moment: " + received);
-
-         */
     }
 
 
