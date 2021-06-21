@@ -54,7 +54,7 @@ public class CoucheTransport {
             if (i == nombrePaquet(paquetEntrant) - 1) {
                 listePaquetsAEnvoyer[i] = new String(paquetEntrant.getBytes(), i * 200,  paquetEntrant.getBytes().length % 200);
             } else {
-                listePaquetsAEnvoyer[i] = new String(paquetEntrant.getBytes(), i * 200, i * 200 + 200);
+                listePaquetsAEnvoyer[i] = new String(paquetEntrant.getBytes(), i * 200, i * 200);
             }
         }
 

@@ -58,13 +58,14 @@ public class QuoteServerThread extends Thread {
 
 
     public void run() {
-
+        int compteur = 0;
+        boolean finDeLaTransmission = true;
         try{
 
         byte[] buf = new byte[256];
             // receive request
             DatagramPacket packet = new DatagramPacket(buf, buf.length);
-            while(liaison.getStateConnexion() == true){
+            while(liaison.getStateConnexion()  && finDeLaTransmission){
                 socket.receive(packet);
                 System.out.println("Avant Envoi -------------------------------");
                 System.out.println("Avant le if"+new String(packet.getData(),0,packet.getLength()));
@@ -77,6 +78,11 @@ public class QuoteServerThread extends Thread {
                 DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
                 socketEnvoi.send(paquetEnvoyer);
                 System.out.println("Après Envoi -------------------------------");
+
+                if(Integer.parseInt(new String(packet.getData(),0,packet.getLength()).substring(4,8)) == compteur+1){
+                    finDeLaTransmission = false;
+                }
+                compteur ++;
             }
 
 
