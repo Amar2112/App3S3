@@ -7,11 +7,13 @@ public class CouchePhysique {
     private CoucheLiaison liaison;
     private  DatagramSocket socketReception;
     private DatagramSocket socketEnvoi;
+    private boolean paquetMalEnvoye;
 
     public CouchePhysique(){
         try{
             socketReception = new DatagramSocket(25501);
             socketEnvoi = new DatagramSocket();
+            paquetMalEnvoye = false;
         }catch (Exception e){
             e.printStackTrace();
             socketReception.close();
@@ -23,11 +25,22 @@ public class CouchePhysique {
         this.liaison = liaison;
     }
 
+    /**
+     * Active la booléenne
+     */
+    public void paquetMalEnvoye(){
+        paquetMalEnvoye = true;
+    }
+
     public void EnvoiServeur(String paquet, String adresse){
         try{
             InetAddress address = InetAddress.getByName(adresse);
 
-            System.out.println(paquet);
+            if (paquetMalEnvoye){
+                System.out.println("Le paquet envoye intended "+ paquet);
+                paquet = paquet.replaceFirst("[e]", "s");
+            }
+            System.out.println("Le paquet envoye "+ paquet);
             //Transformation en bytes
             byte[] buf =  paquet.getBytes();
 
@@ -35,6 +48,7 @@ public class CouchePhysique {
             DatagramPacket packet = new DatagramPacket(buf, buf.length, address, 25500);
             socketEnvoi.send(packet);
 
+            paquetMalEnvoye = false;
             receptionMessage();
 
         }catch (Exception e){

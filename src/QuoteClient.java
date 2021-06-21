@@ -56,6 +56,7 @@ public class QuoteClient {
 
         //Liaison de la couche physique
         couchePhysique.lierCoucheLiaison(coucheLiaison);
+        couchePhysique.paquetMalEnvoye();
 
         //Liaison de la couche transport
         coucheTransport.lierCoucheLiaison(coucheLiaison);

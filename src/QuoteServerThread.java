@@ -58,25 +58,27 @@ public class QuoteServerThread extends Thread {
 
 
     public void run() {
-
+        boolean finDeLaTransmission = true;
         try{
 
         byte[] buf = new byte[256];
             // receive request
             DatagramPacket packet = new DatagramPacket(buf, buf.length);
-            while(liaison.getStateConnexion() == true){
+            while(liaison.getStateConnexion()  && finDeLaTransmission){
                 socket.receive(packet);
                 System.out.println("Avant Envoi -------------------------------");
                 System.out.println("Avant le if"+new String(packet.getData(),0,packet.getLength()));
                 liaison.recevoirPaquet(new String(packet.getData(),0,packet.getLength()));
 
                 String donneesEnvoyer = liaison.getReponseClient();
+                    if(donneesEnvoyer != null){
+                        socketEnvoi.connect(packet.getAddress(), 25501);
+                        byte [] transformationDonnees = donneesEnvoyer.getBytes();
+                        DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
+                        socketEnvoi.send(paquetEnvoyer);
+                        System.out.println("Après Envoi -------------------------------");
+                    }
 
-                socketEnvoi.connect(packet.getAddress(), 25501);
-                byte [] transformationDonnees = donneesEnvoyer.getBytes();
-                DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
-                socketEnvoi.send(paquetEnvoyer);
-                System.out.println("Après Envoi -------------------------------");
             }
 
 
