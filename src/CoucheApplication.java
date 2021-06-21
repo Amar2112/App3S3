@@ -7,7 +7,11 @@ public class CoucheApplication {
 
     private String name;
     private String destinationIP;
-
+    public CoucheApplication(String nom, String destIP)
+    {
+        this.name = nom;
+        this.destinationIP = destIP;
+    }
     public String lireFichier(String nomFichier){
         String donnees = "";
         setName(nomFichier);

@@ -1,8 +1,12 @@
+import java.io.IOException;
 import java.math.BigInteger;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.Arrays;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 import java.util.zip.CRC32;
 import java.util.zip.Checksum;
 import java.lang.Integer;
@@ -15,7 +19,21 @@ public class CoucheLiaison {
     private String reponse;
     private String paquetSortant;
 
+    Logger log;
+    FileHandler fh;
+    SimpleFormatter formatter;
     public CoucheLiaison(){
+
+        try {
+            log = Logger.getLogger(CoucheLiaison.class.getName());
+            fh = new FileHandler("LiaisonDeDonnees.log",true);
+            log.addHandler(fh);
+            formatter = new SimpleFormatter();
+            fh.setFormatter(formatter);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
 
         stateConnexion = true;
         reponse = null;
@@ -74,6 +92,7 @@ public class CoucheLiaison {
             //Ajoute l'entête au paquet
             paquetSortant = populerPaquet(paquetSortant);
             physique.EnvoiServeur(paquetSortant,adresseString);
+            log.info(paquetSortant + " envoyé vers : " + adresseString);
     }
 
     public void envoiReponseTransport (String donnees)

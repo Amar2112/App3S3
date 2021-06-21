@@ -48,13 +48,13 @@ public class CoucheTransport {
      * Fragmente le paquet en petits paquets de 200
      */
     public String[] paquetsFragmentes(String paquetEntrant) {
-        String listePaquetsAEnvoyer[] = new String[nombrePaquet(paquetEntrant)];
+        String[] listePaquetsAEnvoyer = new String[nombrePaquet(paquetEntrant)];
 
         for (int i = 0; i < nombrePaquet(paquetEntrant); i++) {
             if (i == nombrePaquet(paquetEntrant) - 1) {
                 listePaquetsAEnvoyer[i] = new String(paquetEntrant.getBytes(), i * 200,  paquetEntrant.getBytes().length % 200);
             } else {
-                listePaquetsAEnvoyer[i] = new String(paquetEntrant.getBytes(), i * 200, i * 200 + 200);
+                listePaquetsAEnvoyer[i] = new String(paquetEntrant.getBytes(), i * 200,  200);
             }
         }
 

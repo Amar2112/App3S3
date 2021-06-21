@@ -32,6 +32,9 @@
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class QuoteClient {
 
@@ -42,6 +45,7 @@ public class QuoteClient {
             System.out.println("Usage: java QuoteClient <hostname>");
             return;
         }
+
         CouchePhysique couchePhysique = new CouchePhysique();
         CoucheLiaison coucheLiaison = new CoucheLiaison();
         CoucheTransport coucheTransport = new CoucheTransport();
@@ -58,7 +62,16 @@ public class QuoteClient {
 
         String message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit justo nisl, sit amet convallis lectus facilisis at. Sed ultrices lobortis dapibus. Nam scelerisque eros volutpat, cursus dui vel, feugiat nisl. Morbi diam enim, tempus vel eros sed, vestibulum blandit mi. Maecenas semper turpis.";
         String nomFichier = "la vie va bien";
-        coucheTransport.envoiLiaison(message, nomFichier, args[0]);
+        //coucheTransport.envoiLiaison(message, nomFichier, args[0]);
+
+        Scanner scan = new Scanner(System.in);
+        String test = scan.nextLine();
+        String[] buffer = test.split(" ");
+        File f = new File(buffer[0]);
+        CoucheApplication coucheApplication = new CoucheApplication(f.getName(),buffer[1]);
+        coucheTransport.envoiLiaison(coucheApplication.lireFichier(buffer[0]),coucheApplication.getName(),coucheApplication.getDestinationIP());
+
+
 
     }
 
