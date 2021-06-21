@@ -1,12 +1,29 @@
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class CoucheApplication {
-    private String lireFichier(String nomFichier){
+
+    private String name;
+    private String destinationIP;
+
+    public String lireFichier(String nomFichier){
         String donnees = "";
+        setName(nomFichier);
         try {
-            BufferedReader br = new BufferedReader(new FileReader(nomFichier + ".txt"));
+            BufferedReader br;
+
+            //On vérifie si le nom du fichier est bien écrit sinon on ajuste
+            if(!nomFichier.contains(".txt"))
+            {
+                br = new BufferedReader(new FileReader(nomFichier + ".txt"));
+            }
+            else
+            {
+                br = new BufferedReader(new FileReader(nomFichier));
+            }
+
             try {
                 StringBuilder sb = new StringBuilder();
                 String line = br.readLine();
@@ -26,8 +43,23 @@ public class CoucheApplication {
         }
         catch (IOException i){
         i.printStackTrace();
+        }
+        return donnees;
     }
-    return donnees;
 
-}
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDestinationIP() {
+        return destinationIP;
+    }
+
+    public void setDestinationIP(String destinationIP) {
+        this.destinationIP = destinationIP;
+    }
 }

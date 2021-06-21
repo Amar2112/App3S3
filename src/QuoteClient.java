@@ -49,18 +49,21 @@ public class QuoteClient {
 
     public static void main(String[] args) throws IOException {
 
+        Scanner scanner = new Scanner(System.in); // Sert pour le nom de fichier à envoyer
         final int num_port = 25500;
         Tests test = new Tests();
+        CoucheApplication cA = new CoucheApplication();
+        CoucheTransport cT = new CoucheTransport();
+
+        String tester = scanner.nextLine();
+        String buffer[] = tester.split(" ");
+        File f = new File(buffer[0]);
+        cA.setName(f.getName());
+        cA.setDestinationIP(buffer[1]);
 
 
-        if (args.length != 1) {
-            System.out.println("Usage: java QuoteClient <hostname>");
-            return;
-        }
-
-
-        //test.testCoucheLiaison(args[0]);
-        test.testCoucheTransport(args[0]);
+        cT.EnvoiTransport(cA.lireFichier(buffer[0]),cA.getName(),cA.getDestinationIP());
+        //test.testCoucheTransport(buffer[1]);
 
         /*
         buf = message.getBytes();
