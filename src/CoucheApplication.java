@@ -1,17 +1,30 @@
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class CoucheApplication {
 
     private String name;
     private String destinationIP;
+    FileWriter myWriter;
+
+    public CoucheApplication(){
+        try {
+            myWriter = new FileWriter("exampleFile.txt",true);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public CoucheApplication(String nom, String destIP)
     {
         this.name = nom;
         this.destinationIP = destIP;
     }
+
+    /***
+     * Fonction qui permet de de prendre en argument soit juste le nom du fichier ou encore un URL contenant le répertoire
+     * @param nomFichier
+     * @return
+     */
     public String lireFichier(String nomFichier){
         String donnees = "";
         setName(nomFichier);
@@ -50,6 +63,25 @@ public class CoucheApplication {
         }
         return donnees;
     }
+
+    public void writeInFile(String donnees){
+        try {
+
+            myWriter.append(donnees);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public void closeFile(){
+        try {
+            myWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public String getName() {
         return name;

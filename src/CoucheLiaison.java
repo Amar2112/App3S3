@@ -11,7 +11,7 @@ import java.util.zip.CRC32;
 import java.util.zip.Checksum;
 import java.lang.Integer;
 
-public class CoucheLiaison {
+public class CoucheLiaison implements Couche{
     private Boolean stateConnexion;
     private CoucheTransportServeur transport;
     private CoucheTransport retour;

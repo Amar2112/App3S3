@@ -4,30 +4,33 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 
-public class CoucheTransportServeur {
+public class CoucheTransportServeur implements Couche {
     private final int connexionPerdue = 3;
     private int dernierPaquetRecu;
     private int compteurDemande;
     private String listeDePaquet[];
     private int nombreDePaquetsRecus;
     private CoucheLiaison coucheLiaison;
+    private CoucheApplication coucheApplication;
 
-    FileWriter myWriter;
+    //FileWriter myWriter;
 
     public CoucheTransportServeur(){
         dernierPaquetRecu = 0;
         compteurDemande = 1;
         nombreDePaquetsRecus = 0;
-        try {
+        /*try {
             myWriter = new FileWriter("exampleFile.txt",true);
 
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
-
     public void lierAvecLiaison(CoucheLiaison liaison){
-        coucheLiaison = liaison;
+        this.coucheLiaison = liaison;
+    }
+    public void lierAvecApplication(CoucheApplication appli){
+        this.coucheApplication = appli;
     }
     /**
      * Coupe la connexion avec le client
@@ -50,29 +53,18 @@ public class CoucheTransportServeur {
 
         System.out.println("Ce qu'on a recu : ");
         for(int i = 0; i <totalPaquets.length; i++){
-            try {
                 if(i!=0)
                 {
-                    myWriter.append(totalPaquets[i]);
+                    coucheApplication.writeInFile(totalPaquets[i]);
                 }
                 else
                 {
                     Date date = new Date();
-                    myWriter.append(date.toString() + "\n");
-                    myWriter.append("Name of the file : " + totalPaquets[i] + "\n");
+                    coucheApplication.writeInFile(date.toString() + "\n");
+                    coucheApplication.writeInFile("Name of the file : " + totalPaquets[i] + "\n");
                 }
-
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            //System.out.println(totalPaquets[i]);
         }
-        try {
-            myWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        coucheApplication.closeFile();
     }
 
     /**
