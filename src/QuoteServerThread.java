@@ -72,12 +72,18 @@ public class QuoteServerThread extends Thread {
 
                 String donneesEnvoyer = liaison.getReponseClient();
                     if(donneesEnvoyer != null){
+                        if(Integer.parseInt(donneesEnvoyer.substring(11,12)) ==2){
+                        finDeLaTransmission = false;
+                    }
                         socketEnvoi.connect(packet.getAddress(), 25501);
                         byte [] transformationDonnees = donneesEnvoyer.getBytes();
                         DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
                         socketEnvoi.send(paquetEnvoyer);
                         System.out.println("Après Envoi -------------------------------");
+
                     }
+
+
 
             }
 
