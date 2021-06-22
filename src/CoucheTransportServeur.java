@@ -1,3 +1,9 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Date;
+
 public class CoucheTransportServeur {
     private final int connexionPerdue = 3;
     private int dernierPaquetRecu;
@@ -6,10 +12,18 @@ public class CoucheTransportServeur {
     private int nombreDePaquetsRecus;
     private CoucheLiaison coucheLiaison;
 
+    FileWriter myWriter;
+
     public CoucheTransportServeur(){
         dernierPaquetRecu = 0;
         compteurDemande = 1;
         nombreDePaquetsRecus = 0;
+        try {
+            myWriter = new FileWriter("exampleFile.txt",true);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void lierAvecLiaison(CoucheLiaison liaison){
@@ -40,7 +54,28 @@ public class CoucheTransportServeur {
 
         System.out.println("Ce qu'on a recu : ");
         for(int i = 0; i <totalPaquets.length; i++){
-            System.out.println(totalPaquets[i]);
+            try {
+                if(i!=0)
+                {
+                    myWriter.append(totalPaquets[i]);
+                }
+                else
+                {
+                    Date date = new Date();
+                    myWriter.append(date.toString() + "\n");
+                    myWriter.append("Name of the file : " + totalPaquets[i] + "\n");
+                }
+
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            //System.out.println(totalPaquets[i]);
+        }
+        try {
+            myWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
