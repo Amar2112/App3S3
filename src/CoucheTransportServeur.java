@@ -12,7 +12,7 @@ public class CoucheTransportServeur {
     private int nombreDePaquetsRecus;
     private CoucheLiaison coucheLiaison;
 
-    FileWriter myWriter;
+    private FileWriter myWriter;
 
     public CoucheTransportServeur(){
         dernierPaquetRecu = 0;
@@ -50,14 +50,23 @@ public class CoucheTransportServeur {
         String renvoi = paquetDemande.substring(0,11) + "2" + "La connexion est perdue";
         //System.out.println("Allo");
         coucheLiaison.envoiReponseAuClient(renvoi);
+        envoyerCoucheApplication(listeDePaquet);
     }
 
     /**
      * Envoyer le tableau de string à la couche application
      * @param totalPaquets
      */
-    public void envoyerCoucheApplication(String [] totalPaquets){
-
+    public void envoyerCoucheApplication(String [] totalPaquets) //throws TransmissionErrorException
+     {
+/*
+        for(int i = 0; i < totalPaquets.length; i++){
+            if(totalPaquets[i] == null){
+                throw new TransmissionErrorException("Il y a une erreur de transmission");
+            }
+        }
+        
+ */
         System.out.println("Ce qu'on a recu : ");
         for(int i = 0; i <totalPaquets.length; i++){
             try {
