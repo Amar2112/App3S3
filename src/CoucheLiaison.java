@@ -74,12 +74,12 @@ public class CoucheLiaison {
         String donnes = paquetEntrant.substring(0, paquetEntrant.length()-10);
 
         if(compareCRC(donnes,crc)){
-            System.out.println("Avec le crc" + donnes);
             transport.getFromCoucheLiaison(donnes);
-
+            System.out.println("Je rentre à bonne place");
             String logInfo = donnes.substring(12);
             log.info("Message reçu par le serveur : "+logInfo + "\n");
         }else{
+
             transport.demandeRenvoi(paquetEntrant);
         }
     }

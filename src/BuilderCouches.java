@@ -28,6 +28,16 @@ public class BuilderCouches implements Builder {
         cT.lierCoucheLiaison(cL);
     }
 
+    public void changerCRC(){ cP.paquetMalEnvoye();}
+
+    public void envoiInverse(){
+        cT.envoiInverse();
+    }
+
+    public void envoi3erreurs(){
+        cT.triggerErreur3Fois();
+    }
+
     public void sendThroughTransport(String fichier, String nomFichier, String adresse) {
         cT.envoiLiaison(fichier,nomFichier,adresse);
     }
