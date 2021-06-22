@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Tue Jun 22 12:36:12 EDT 2021
 Name of the file : test2.txt
 Life is wonderful. Without it we'd all be dead.
@@ -81,5 +82,7 @@ He who laughs last thinks slowest!
 Tue Jun 22 13:12:43 EDT 2021
 Name of the file : null
 nullnullnullnullnullnullnullnullnullnullnullnullnullnull
+=======
+>>>>>>> main
 =======
 >>>>>>> main

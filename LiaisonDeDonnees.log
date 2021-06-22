@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
 juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
@@ -8,11 +9,22 @@ INFO: Message reçu par le serveur : test2.txt
 juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
 juin 22, 2021 11:19:57 A.M. CoucheLiaison recevoirPaquet
+=======
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000100090480Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : C:\Users\Simon\Desktop\Université\S3\APP3\test2
+
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000200092000Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+>>>>>>> main
 INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
 Daddy, why doesn't this magnet pick up this floppy disk?
 Give me ambiguity or give me something else.
 I.R.S.: We've got what it takes to take what yo
 
+<<<<<<< HEAD
 juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
 juin 22, 2021 11:19:57 A.M. CoucheLiaison recevoirPaquet
@@ -433,10 +445,16 @@ INFO: Message reçu par le serveur : test2.txt
 juin 22, 2021 12:03:15 P.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
 juin 22, 2021 12:03:15 P.M. CoucheLiaison recevoirPaquet
+=======
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000300092000Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+>>>>>>> main
 INFO: Message reçu par le serveur : u've got!
 We are born naked, wet and hungry. Then things get worse.
 Make it idiot proof and someone will make a better idiot.
 He who laughs last thinks slowest!
+<<<<<<< HEAD
 
 
 
@@ -1110,6 +1128,57 @@ We are born naked, wet and hungry. Then things get worse.
 Make it idiot proof and someone will make a better idiot.
 He who laughs last thinks slowest!
 
+=======
+Always remember you're unique, just
 
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000400092000Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur :  like everyone else.
+"More hay, Trigger?" "No thanks, Roy, I'm stuffed!"
+A flashlight is a case for holding dead batteries.
+Lottery: A tax on people who are bad at math.
+Error, no keyboard - press
+
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000500092000Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur :  F1 to continue.
+There's too much blood in my caffeine system.Tue Jun 22 11:11:20 EDT 2021
+Name of the file : C:\Users\Simon\Desktop\Université\S3\APP3\test2
+Life is wonderful. Without it we'd all
+
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000600092000Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur :  be dead.
+Daddy, why doesn't this magnet pick up this floppy disk?
+Give me ambiguity or give me something else.
+I.R.S.: We've got what it takes to take what you've got!
+We are born naked, wet and 
+
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000700092000Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : hungry. Then things get worse.
+Make it idiot proof and someone will make a better idiot.
+He who laughs last thinks slowest!
+Always remember you're unique, just like everyone else.
+"More hay, Trigg
+
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000800092000Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : er?" "No thanks, Roy, I'm stuffed!"
+A flashlight is a case for holding dead batteries.
+Lottery: A tax on people who are bad at math.
+Error, no keyboard - press F1 to continue.
+There's too much blo
+>>>>>>> main
+
+Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000900090270Le paquet a ete reçu
+Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : od in my caffeine system.
 
 

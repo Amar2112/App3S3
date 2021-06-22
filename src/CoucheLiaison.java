@@ -1,17 +1,11 @@
 import java.io.IOException;
-import java.math.BigInteger;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.util.Arrays;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import java.util.zip.CRC32;
 import java.util.zip.Checksum;
-import java.lang.Integer;
 
-public class CoucheLiaison implements Couche{
+public class CoucheLiaison {
     private Boolean stateConnexion;
     private CoucheTransportServeur transport;
     private CoucheTransport retour;

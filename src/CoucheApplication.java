@@ -1,18 +1,14 @@
 import java.io.*;
+import java.util.Date;
 
 public class CoucheApplication {
 
     private String name;
     private String destinationIP;
-    FileWriter myWriter;
+    private FileWriter myWriter;
 
     public CoucheApplication(){
-        try {
-            myWriter = new FileWriter("exampleFile.txt",true);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
     public CoucheApplication(String nom, String destIP)
     {
@@ -64,16 +60,28 @@ public class CoucheApplication {
         return donnees;
     }
 
-    public void writeInFile(String donnees){
+    public void writeInFile(String[] donnees) {
         try {
-
-            myWriter.append(donnees);
-
+            myWriter = new FileWriter("exampleFile.txt",true);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        for (int i = 0; i < donnees.length; i++) {
+            try {
+                if (i != 0) {
+                    myWriter.append(donnees[i]);
+                } else {
+                    Date date = new Date();
+                    myWriter.append(date.toString() + "\n");
+                    myWriter.append("Name of the file : " + donnees[i] + "\n");
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        closeFile();
     }
+
     public void closeFile(){
         try {
             myWriter.close();

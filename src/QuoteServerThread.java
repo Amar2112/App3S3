@@ -41,7 +41,8 @@ public class QuoteServerThread extends Thread {
     protected boolean moreQuotes = true;
     private CoucheLiaison liaison;
     private CoucheTransportServeur transportServeur;
-
+    private CoucheApplication application;
+    private BuilderServeur serveur;
     public QuoteServerThread() throws IOException {
         this("QuoteServerThread");
     }
@@ -50,10 +51,7 @@ public class QuoteServerThread extends Thread {
         super(name);
         socket = new DatagramSocket(25500);
         socketEnvoi = new DatagramSocket();
-        liaison = new CoucheLiaison();
-        transportServeur = new CoucheTransportServeur();
-        liaison.lierCoucheTransportServeur(transportServeur);
-        transportServeur.lierAvecLiaison(liaison);
+        serveur = new BuilderServeur();
     }
 
 
@@ -64,13 +62,13 @@ public class QuoteServerThread extends Thread {
         byte[] buf = new byte[256];
             // receive request
             DatagramPacket packet = new DatagramPacket(buf, buf.length);
-            while(liaison.getStateConnexion()  && finDeLaTransmission){
+            while(serveur.getStateConnection()  && finDeLaTransmission){
                 socket.receive(packet);
                 System.out.println("Avant Envoi -------------------------------");
-                System.out.println("Avant le if"+new String(packet.getData(),0,packet.getLength()));
-                liaison.recevoirPaquet(new String(packet.getData(),0,packet.getLength()));
+                //System.out.println("Avant le if"+new String(packet.getData(),0,packet.getLength()));
+                serveur.recevoirPaquet(new String(packet.getData(),0,packet.getLength()));
 
-                String donneesEnvoyer = liaison.getReponseClient();
+                String donneesEnvoyer = serveur.getReponseClient();
                     if(donneesEnvoyer != null){
                         if(Integer.parseInt(donneesEnvoyer.substring(11,12)) ==2){
                         finDeLaTransmission = false;

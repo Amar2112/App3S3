@@ -12,20 +12,14 @@ public class CoucheTransportServeur {
     private int nombreDePaquetsRecus;
     private CoucheLiaison coucheLiaison;
     private boolean premiereDemande;
+    private CoucheApplication coucheApplication;
 
-    private FileWriter myWriter;
 
     public CoucheTransportServeur(){
         premiereDemande = true;
         dernierPaquetRecu = 0;
         compteurDemande = 0;
         nombreDePaquetsRecus = 0;
-        try {
-            myWriter = new FileWriter("exampleFile.txt",true);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     public void lierAvecLiaison(CoucheLiaison liaison){
@@ -60,40 +54,8 @@ public class CoucheTransportServeur {
      */
     public void envoyerCoucheApplication(String [] totalPaquets) //throws TransmissionErrorException
      {
-/*
-        for(int i = 0; i < totalPaquets.length; i++){
-            if(totalPaquets[i] == null){
-                throw new TransmissionErrorException("Il y a une erreur de transmission");
-            }
-        }
-
- */
-        System.out.println("Ce qu'on a recu : ");
-        for(int i = 0; i <totalPaquets.length; i++){
-            try {
-                if(i!=0)
-                {
-                    myWriter.append(totalPaquets[i]);
-                }
-                else
-                {
-                    Date date = new Date();
-                    myWriter.append(date.toString() + "\n");
-                    myWriter.append("Name of the file : " + totalPaquets[i] + "\n");
-                }
-
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            //System.out.println(totalPaquets[i]);
-        }
-        try {
-            myWriter.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+         coucheApplication.writeInFile(totalPaquets);
+     }
 
     /**
      * Acknowledge la demande
@@ -165,5 +127,9 @@ public class CoucheTransportServeur {
         listeDePaquet = new String[Integer.parseInt(paquet.substring(4,8))];
     }
         TraiterPaquetEnvoi(paquet);
+    }
+
+    public void lierCoucheApplication(CoucheApplication appli){
+        this.coucheApplication = appli;
     }
 }
