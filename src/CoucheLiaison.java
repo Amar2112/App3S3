@@ -77,11 +77,11 @@ public class CoucheLiaison {
             System.out.println("Avec le crc" + donnes);
             transport.getFromCoucheLiaison(donnes);
 
+            String logInfo = donnes.substring(12);
+            log.info("Message reçu par le serveur : "+logInfo + "\n");
         }else{
             transport.demandeRenvoi(paquetEntrant);
         }
-
-
     }
     /**
      * Envoi le paquet au serveur
@@ -92,7 +92,11 @@ public class CoucheLiaison {
             //Ajoute l'entête au paquet
             paquetSortant = populerPaquet(paquetSortant);
             physique.EnvoiServeur(paquetSortant,adresseString);
-            log.info(paquetSortant + " envoyé vers : " + adresseString);
+
+            String logInfo = paquetSortant.substring(12);
+            logInfo = logInfo.substring(0,logInfo.length()-10);
+
+            log.info(logInfo + " envoyé vers : " + adresseString + "\n");
     }
 
     public void envoiReponseTransport (String donnees)
@@ -103,6 +107,7 @@ public class CoucheLiaison {
 
     public void envoiReponseAuClient(String paquet){
         System.out.println("Reponse à renvoyer"+paquet);
+        log.info("Réponse à renvoyer : " + paquet);
         reponse = paquet;
     }
 
