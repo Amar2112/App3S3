@@ -3,11 +3,12 @@ public class CoucheTransport {
     private CoucheLiaison liaison;
     private String adresse;
     private String[] listePaquetsAEnvoyer;
-
-    public boolean reception;
+    private int compteur;
+    private boolean reception;
 
     public CoucheTransport(){
-        reception = false;
+        compteur = 0;
+        reception = true;
         adresse = new String();
     }
 
@@ -24,21 +25,25 @@ public class CoucheTransport {
 
 
         String [] paquetsAEnvoyer = paquetFragmenteEntete(paquetEntrant,fichierNom);
-
         listePaquetsAEnvoyer = paquetsAEnvoyer;
-        for(int i = 0; i < paquetsAEnvoyer.length;i++){
-            System.out.println(paquetsAEnvoyer[i]);
-            liaison.envoyerPaquetServeur(paquetsAEnvoyer[i], adresse);
+
+        liaison.envoyerPaquetServeur(paquetsAEnvoyer[6], adresse);
+
+        while(compteur < paquetsAEnvoyer.length && reception){
+            System.out.println(paquetsAEnvoyer[compteur]);
+            liaison.envoyerPaquetServeur(paquetsAEnvoyer[compteur], adresse);
+            compteur++;
         }
         
     }
 
     public void retourLiaison(String donnees){
-        System.out.println(donnees);
         if(Integer.parseInt(donnees.substring(11,12)) == 1){
-            liaison.envoyerPaquetServeur(listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1], adresse);
-        }else{
-
+            String paquetARenvoyer = listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1].substring(0,11) + "1" + listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1].substring(12);
+            liaison.envoyerPaquetServeur(paquetARenvoyer, adresse);
+        }else if(Integer.parseInt(donnees.substring(11,12)) == 2) {
+            reception = false;
+            System.out.println("Reception" + reception);
         }
     }
 

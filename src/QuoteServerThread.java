@@ -41,26 +41,19 @@ public class QuoteServerThread extends Thread {
     protected boolean moreQuotes = true;
     private CoucheLiaison liaison;
     private CoucheTransportServeur transportServeur;
-    private CoucheApplication application;
 
     public QuoteServerThread() throws IOException {
         this("QuoteServerThread");
     }
 
     public QuoteServerThread(String name) throws IOException {
-
         super(name);
         socket = new DatagramSocket(25500);
         socketEnvoi = new DatagramSocket();
-        CoucheFactory coucheUsine = new CoucheFactory();
-
-        application = new CoucheApplication();
         liaison = new CoucheLiaison();
         transportServeur = new CoucheTransportServeur();
         liaison.lierCoucheTransportServeur(transportServeur);
         transportServeur.lierAvecLiaison(liaison);
-        transportServeur.lierAvecApplication(application);
-
     }
 
 
@@ -74,16 +67,23 @@ public class QuoteServerThread extends Thread {
             while(liaison.getStateConnexion()  && finDeLaTransmission){
                 socket.receive(packet);
                 System.out.println("Avant Envoi -------------------------------");
-                //System.out.println("Avant le if"+new String(packet.getData(),0,packet.getLength()));
+                System.out.println("Avant le if"+new String(packet.getData(),0,packet.getLength()));
                 liaison.recevoirPaquet(new String(packet.getData(),0,packet.getLength()));
+
                 String donneesEnvoyer = liaison.getReponseClient();
-                if(donneesEnvoyer != null){
-                    socketEnvoi.connect(packet.getAddress(), 25501);
-                    byte [] transformationDonnees = donneesEnvoyer.getBytes();
-                    DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
-                    socketEnvoi.send(paquetEnvoyer);
-                    System.out.println("Après Envoi -------------------------------");
-                }
+                    if(donneesEnvoyer != null){
+                        if(Integer.parseInt(donneesEnvoyer.substring(11,12)) ==2){
+                        finDeLaTransmission = false;
+                    }
+                        socketEnvoi.connect(packet.getAddress(), 25501);
+                        byte [] transformationDonnees = donneesEnvoyer.getBytes();
+                        DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
+                        socketEnvoi.send(paquetEnvoyer);
+                        System.out.println("Après Envoi -------------------------------");
+
+                    }
+
+
 
             }
 
