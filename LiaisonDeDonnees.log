@@ -22,6 +22,7 @@ He who laughs last thinks slowest!
 
 
 
+<<<<<<< HEAD
 juin 21, 2021 9:42:54 P.M. CoucheLiaison envoyerPaquetServeur
 INFO: test2.txt envoyé vers : LAPTOP-KRVV1NU8
 
@@ -96,11 +97,22 @@ Always remember you're unique, just
 juin 21, 2021 9:50:05 P.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000100152001Le paquet doit être renvoye
 juin 21, 2021 9:50:05 P.M. CoucheLiaison recevoirPaquet
+=======
+Jun 21, 2021 10:12:33 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000100030050Le paquet a ete reçu
+Jun 21, 2021 10:12:33 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : test2
+
+Jun 21, 2021 10:12:33 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
+Jun 21, 2021 10:12:33 PM CoucheLiaison recevoirPaquet
+>>>>>>> main
 INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
 Daddy, why doesn't this magnet pick up this floppy disk?
 Give me ambiguity or give me something else.
 I.R.S.: We've got what it takes to take what yo
 
+<<<<<<< HEAD
 juin 21, 2021 9:50:05 P.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000100150140Le paquet a ete reçu
 juin 21, 2021 9:50:05 P.M. CoucheLiaison recevoirPaquet
@@ -122,10 +134,16 @@ I.R.S.: We've got what it takes to take what yo
 juin 21, 2021 9:50:05 P.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000300152000Le paquet a ete reçu
 juin 21, 2021 9:50:05 P.M. CoucheLiaison recevoirPaquet
+=======
+Jun 21, 2021 10:12:33 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
+Jun 21, 2021 10:12:33 PM CoucheLiaison recevoirPaquet
+>>>>>>> main
 INFO: Message reçu par le serveur : u've got!
 We are born naked, wet and hungry. Then things get worse.
 Make it idiot proof and someone will make a better idiot.
 He who laughs last thinks slowest!
+<<<<<<< HEAD
 Always remember you're unique, just
 
 juin 21, 2021 9:50:05 P.M. CoucheLiaison envoiReponseAuClient
@@ -589,11 +607,26 @@ Always remember you're unique, just
 juin 22, 2021 9:37:11 A.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000100152001Le paquet doit être renvoye
 juin 22, 2021 9:37:11 A.M. CoucheLiaison recevoirPaquet
+=======
+
+
+
+
+Jun 21, 2021 10:32:30 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000100030050Le paquet a ete reçu
+Jun 21, 2021 10:32:30 PM CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : test2
+
+Jun 21, 2021 10:32:30 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
+Jun 21, 2021 10:32:30 PM CoucheLiaison recevoirPaquet
+>>>>>>> main
 INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
 Daddy, why doesn't this magnet pick up this floppy disk?
 Give me ambiguity or give me something else.
 I.R.S.: We've got what it takes to take what yo
 
+<<<<<<< HEAD
 juin 22, 2021 9:37:11 A.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000100150140Le paquet a ete reçu
 juin 22, 2021 9:37:11 A.M. CoucheLiaison recevoirPaquet
@@ -773,10 +806,16 @@ Error, no keyboard - press
 juin 22, 2021 9:43:14 A.M. CoucheLiaison envoiReponseAuClient
 INFO: Réponse à renvoyer : 000200152001Le paquet doit être renvoye
 juin 22, 2021 9:43:14 A.M. CoucheLiaison recevoirPaquet
+=======
+Jun 21, 2021 10:32:30 PM CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
+Jun 21, 2021 10:32:30 PM CoucheLiaison recevoirPaquet
+>>>>>>> main
 INFO: Message reçu par le serveur : u've got!
 We are born naked, wet and hungry. Then things get worse.
 Make it idiot proof and someone will make a better idiot.
 He who laughs last thinks slowest!
+<<<<<<< HEAD
 Always remember you're unique, just
 
 juin 22, 2021 9:43:14 A.M. CoucheLiaison envoiReponseAuClient
@@ -1535,4 +1574,9 @@ INFO: Message reçu par le serveur :  like everyone else.
 A flashlight is a case for holding dead batteries.
 Lottery: A tax on people who are bad at math.
 Error, no keyboard - press
+=======
+
+
+
+>>>>>>> main
 

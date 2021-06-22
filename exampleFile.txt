@@ -58,8 +58,13 @@ Make it idiot proof and someone will make a better idiot.
 He who laughs last thinks slowest!
 
 
+<<<<<<< HEAD
 Mon Jun 21 21:42:55 EDT 2021
 Name of the file : test2.txt
+=======
+Mon Jun 21 22:12:33 EDT 2021
+Name of the file : test2
+>>>>>>> main
 Life is wonderful. Without it we'd all be dead.
 Daddy, why doesn't this magnet pick up this floppy disk?
 Give me ambiguity or give me something else.
@@ -69,8 +74,13 @@ Make it idiot proof and someone will make a better idiot.
 He who laughs last thinks slowest!
 
 
+<<<<<<< HEAD
 Mon Jun 21 21:50:05 EDT 2021
 Name of the file : one-liners.txt
+=======
+Mon Jun 21 22:32:30 EDT 2021
+Name of the file : test2
+>>>>>>> main
 Life is wonderful. Without it we'd all be dead.
 Daddy, why doesn't this magnet pick up this floppy disk?
 Give me ambiguity or give me something else.
@@ -78,6 +88,7 @@ I.R.S.: We've got what it takes to take what you've got!
 We are born naked, wet and hungry. Then things get worse.
 Make it idiot proof and someone will make a better idiot.
 He who laughs last thinks slowest!
+<<<<<<< HEAD
 Always remember you're unique, just like everyone else.
 "More hay, Trigger?" "No thanks, Roy, I'm stuffed!"
 A flashlight is a case for holding dead batteries.
@@ -496,3 +507,7 @@ Know what to expect before you connect.
 Oh, what a tangled website we weave when first we practice.
 Speed thrills.
 Give a man a fish and you feed him for a day; teach him to use the Net and he won't bother you for weeks.
+=======
+
+
+>>>>>>> main

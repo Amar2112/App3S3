@@ -40,42 +40,13 @@ public class QuoteClient {
 
 
     public static void main(String[] args) throws IOException {
-
-        if (args.length != 1) {
-            System.out.println("Usage: java QuoteClient <hostname>");
-            return;
-        }
-
-        CouchePhysique couchePhysique = new CouchePhysique();
-        CoucheLiaison coucheLiaison = new CoucheLiaison();
-        CoucheTransport coucheTransport = new CoucheTransport();
-
-        //Liaison de la couche liaison
-        coucheLiaison.lierCouchePhysique(couchePhysique);
-        coucheLiaison.lierCoucheTransport(coucheTransport);
-
-        //Liaison de la couche physique
-        couchePhysique.lierCoucheLiaison(coucheLiaison);
-        //À desactiver pour le bon fonctionnement
-        //couchePhysique.paquetMalEnvoye();
-
-        //Liaison de la couche transport
-        coucheTransport.lierCoucheLiaison(coucheLiaison);
-
-        String message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit justo nisl, sit amet convallis lectus facilisis at. Sed ultrices lobortis dapibus. Nam scelerisque eros volutpat, cursus dui vel, feugiat nisl. Morbi diam enim, tempus vel eros sed, vestibulum blandit mi. Maecenas semper turpis.";
-        String nomFichier = "la vie va bien";
+        BuilderCouches couches = new BuilderCouches();
+        BuilderApplicationScan appScan = new BuilderApplicationScan();
+        couches.sendThroughTransport(appScan.getFichier(), appScan.getName(),appScan.getDestinationIP());
+        //String message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit justo nisl, sit amet convallis lectus facilisis at. Sed ultrices lobortis dapibus. Nam scelerisque eros volutpat, cursus dui vel, feugiat nisl. Morbi diam enim, tempus vel eros sed, vestibulum blandit mi. Maecenas semper turpis.";
+        //String nomFichier = "la vie va bien";
         //coucheTransport.envoiLiaison(message, nomFichier, args[0]);
-
-        Scanner scan = new Scanner(System.in);
-        String test = scan.nextLine();
-        String[] buffer = test.split(" ");
-        File f = new File(buffer[0]);
-        CoucheApplication coucheApplication = new CoucheApplication(f.getName(),buffer[1]);
-        coucheTransport.envoiLiaison(coucheApplication.lireFichier(buffer[0]),coucheApplication.getName(),coucheApplication.getDestinationIP());
-
 
 
     }
-
-
 }
