@@ -27,7 +27,8 @@ public class CoucheTransport {
         String [] paquetsAEnvoyer = paquetFragmenteEntete(paquetEntrant,fichierNom);
         listePaquetsAEnvoyer = paquetsAEnvoyer;
 
-        liaison.envoyerPaquetServeur(paquetsAEnvoyer[6], adresse);
+        /*À*/
+        //liaison.envoyerPaquetServeur(paquetsAEnvoyer[6], adresse);
 
         while(compteur < paquetsAEnvoyer.length && reception){
             System.out.println(paquetsAEnvoyer[compteur]);
