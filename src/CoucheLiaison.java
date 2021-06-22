@@ -113,7 +113,6 @@ public class CoucheLiaison {
 
     public String getReponseClient(){
         return reponse;
-
     }
 
     /**
