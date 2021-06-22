@@ -24,8 +24,10 @@ public class CoucheTransport {
 
 
         String [] paquetsAEnvoyer = paquetFragmenteEntete(paquetEntrant,fichierNom);
-
         listePaquetsAEnvoyer = paquetsAEnvoyer;
+
+        liaison.envoyerPaquetServeur(paquetsAEnvoyer[1], adresse);
+
         for(int i = 0; i < paquetsAEnvoyer.length;i++){
             System.out.println(paquetsAEnvoyer[i]);
             liaison.envoyerPaquetServeur(paquetsAEnvoyer[i], adresse);
@@ -36,9 +38,11 @@ public class CoucheTransport {
     public void retourLiaison(String donnees){
         System.out.println(donnees);
         if(Integer.parseInt(donnees.substring(11,12)) == 1){
-            liaison.envoyerPaquetServeur(listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1], adresse);
+            String paquetARenvoyer = listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1].substring(0,11) + "1" + listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1].substring(12);
+            System.out.println("Paquet problématique" + paquetARenvoyer);
+            liaison.envoyerPaquetServeur(paquetARenvoyer, adresse);
         }else{
-
+            System.out.println("Insulte");
         }
     }
 
