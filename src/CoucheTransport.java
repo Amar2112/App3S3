@@ -5,11 +5,15 @@ public class CoucheTransport {
     private String[] listePaquetsAEnvoyer;
     private int compteur;
     private boolean reception;
+    private boolean troisErreurs;
+    private boolean envoiInverse;
 
     public CoucheTransport(){
         compteur = 0;
         reception = true;
         adresse = new String();
+        troisErreurs = false;
+        envoiInverse = false;
     }
 
     public void lierCoucheLiaison(CoucheLiaison liaison){
@@ -27,8 +31,13 @@ public class CoucheTransport {
         String [] paquetsAEnvoyer = paquetFragmenteEntete(paquetEntrant,fichierNom);
         listePaquetsAEnvoyer = paquetsAEnvoyer;
 
-        /*À*/
-        //liaison.envoyerPaquetServeur(paquetsAEnvoyer[6], adresse);
+        if(troisErreurs == true ){
+            liaison.envoyerPaquetServeur(paquetsAEnvoyer[6], adresse);
+        }
+        if(envoiInverse == true){
+            liaison.envoyerPaquetServeur(paquetsAEnvoyer[1], adresse);
+        }
+
 
         while(compteur < paquetsAEnvoyer.length && reception){
             System.out.println(paquetsAEnvoyer[compteur]);
@@ -47,6 +56,12 @@ public class CoucheTransport {
             System.out.println("Reception" + reception);
         }
     }
+
+    public void triggerErreur3Fois(){
+        troisErreurs = true;
+    }
+
+    public void envoiInverse(){ envoiInverse = true;}
 
     /**
      * Deduit le nombre de paquets à fragmenter pour 200 Bytes

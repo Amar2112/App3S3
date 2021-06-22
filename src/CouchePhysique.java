@@ -36,7 +36,7 @@ public class CouchePhysique {
         try{
             InetAddress address = InetAddress.getByName(adresse);
 
-            if (paquetMalEnvoye){
+            if (paquetMalEnvoye && Integer.parseInt(paquet.substring(0,4)) == 1 && Integer.parseInt(paquet.substring(11,12)) == 0 ){
                 System.out.println("Le paquet envoye intended "+ paquet);
                 paquet = paquet.replaceFirst("[e]", "s");
             }
