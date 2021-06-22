@@ -43,7 +43,7 @@ public class QuoteClient {
         BuilderApplicationScan appScan = new BuilderApplicationScan();
 
         Tests tests = new Tests();
-        tests.test3Erreurs(appScan);
+        tests.testEnvoiPasBonOrdre(appScan);
 
         //String message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit justo nisl, sit amet convallis lectus facilisis at. Sed ultrices lobortis dapibus. Nam scelerisque eros volutpat, cursus dui vel, feugiat nisl. Morbi diam enim, tempus vel eros sed, vestibulum blandit mi. Maecenas semper turpis.";
         //String nomFichier = "la vie va bien";

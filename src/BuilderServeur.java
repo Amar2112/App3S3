@@ -21,6 +21,7 @@ public class BuilderServeur implements Builder{
         this.liaison.lierCoucheTransportServeur(transportServeur);
         this.transportServeur.lierAvecLiaison(liaison);
         this.transportServeur.lierCoucheApplication(application);
+        this.application.lierCoucheTransportServeur(transportServeur);
     }
 
     public void recevoirPaquet(String packet){

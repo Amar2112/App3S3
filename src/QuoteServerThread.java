@@ -62,7 +62,7 @@ public class QuoteServerThread extends Thread {
         byte[] buf = new byte[256];
             // receive request
             DatagramPacket packet = new DatagramPacket(buf, buf.length);
-            while(serveur.getStateConnection()  && finDeLaTransmission){
+            while(true){
                 socket.receive(packet);
                 System.out.println("Avant Envoi -------------------------------");
                 //System.out.println("Avant le if"+new String(packet.getData(),0,packet.getLength()));
@@ -71,7 +71,7 @@ public class QuoteServerThread extends Thread {
                 String donneesEnvoyer = serveur.getReponseClient();
                     if(donneesEnvoyer != null){
                         if(Integer.parseInt(donneesEnvoyer.substring(11,12)) ==2){
-                        finDeLaTransmission = false;
+                        //finDeLaTransmission = false;
                     }
                         socketEnvoi.connect(packet.getAddress(), 25501);
                         byte [] transformationDonnees = donneesEnvoyer.getBytes();
@@ -80,9 +80,6 @@ public class QuoteServerThread extends Thread {
                         System.out.println("Après Envoi -------------------------------");
 
                     }
-
-
-
             }
 
 
