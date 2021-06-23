@@ -10,7 +10,9 @@ public class BuilderCouches implements Builder {
         stepB();
     }
 
-
+    /**
+     * La première étape permet de créer les objets nécessaires au bon fonctionnement du builder
+     */
     @Override
     public void stepA() {
         cLC = new CoucheLiaisonClient();
@@ -18,6 +20,9 @@ public class BuilderCouches implements Builder {
         cP = new CouchePhysique();
     }
 
+    /**
+     * La deuxième étape permet de lier les objets créés ensemble
+     */
     @Override
     public void stepB() {
         //Liaison de la couche liaison
@@ -39,6 +44,12 @@ public class BuilderCouches implements Builder {
         cT.triggerErreur3Fois();
     }
 
+    /**
+     *
+     * @param fichier Le fichier qui doit être envoyé
+     * @param nomFichier Le nom du fichier
+     * @param adresse L'adresse IP de l'ordinateur que nous allons utiliser
+     */
     public void sendThroughTransport(String fichier, String nomFichier, String adresse) {
         cT.envoiLiaison(fichier,nomFichier,adresse);
     }

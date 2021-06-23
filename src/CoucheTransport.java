@@ -1,6 +1,6 @@
 public class CoucheTransport {
 
-    private CoucheLiaison liaison;
+    private CoucheLiaisonClient liaison;
     private String adresse;
     private String[] listePaquetsAEnvoyer;
     private int compteur;
@@ -16,7 +16,7 @@ public class CoucheTransport {
         envoiInverse = false;
     }
 
-    public void lierCoucheLiaison(CoucheLiaison liaison){
+    public void lierCoucheLiaison(CoucheLiaisonClient liaison){
         this.liaison = liaison;
     }
     /**

@@ -68,6 +68,10 @@ public class CoucheApplication {
         transportServeur.reinitialiser();
     }
 
+    /**
+     * Permet d'écrire dans le fichier physique ce que nous avons reçu comme message.
+     * @param donnees Contient le nom du fichier reçu ainsi que son contenu.
+     */
     public void writeInFile(String[] donnees) {
         boolean quelqueChoseEcrit = true;
         for(int i = 0; i< donnees.length; i++){
@@ -102,6 +106,9 @@ public class CoucheApplication {
 
     }
 
+    /**
+     * Permet de fermer le fichier pour bien enregistrer le contenu.
+     */
     public void closeFile(){
         try {
             myWriter.close();

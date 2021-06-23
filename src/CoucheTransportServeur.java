@@ -10,7 +10,7 @@ public class CoucheTransportServeur {
     private int compteurDemande;
     private String listeDePaquet[];
     private int nombreDePaquetsRecus;
-    private CoucheLiaison coucheLiaison;
+    private CoucheLiaisonServeur coucheLiaison;
     private boolean premiereDemande;
     private CoucheApplication coucheApplication;
 
@@ -30,7 +30,7 @@ public class CoucheTransportServeur {
         listeDePaquet = null;
     }
 
-    public void lierAvecLiaison(CoucheLiaison liaison){
+    public void lierAvecLiaison(CoucheLiaisonServeur liaison){
         coucheLiaison = liaison;
     }
     /**

@@ -39,7 +39,7 @@ public class QuoteServerThread extends Thread {
     protected DatagramSocket socketEnvoi = null;
     protected BufferedReader in = null;
     protected boolean moreQuotes = true;
-    private CoucheLiaison liaison;
+    private CoucheLiaisonServeur liaison;
     private CoucheTransportServeur transportServeur;
     private CoucheApplication application;
     private BuilderServeur serveur;

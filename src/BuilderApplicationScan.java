@@ -13,6 +13,10 @@ public class BuilderApplicationScan implements Builder {
         stepA();
         stepB();
     }
+
+    /**
+     * La première étape permet de créer les objets nécessaires au bon fonctionnement du builder
+     */
     @Override
     public void stepA() {
 
@@ -20,6 +24,9 @@ public class BuilderApplicationScan implements Builder {
         dataInput = scan.nextLine();
     }
 
+    /**
+     * La deuxième étape permet de lier les objets créés ensemble
+     */
     @Override
     public void stepB() {
         buffer = dataInput.split(" ");
