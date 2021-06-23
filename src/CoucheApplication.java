@@ -6,6 +6,7 @@ public class CoucheApplication {
     private String name;
     private String destinationIP;
     private FileWriter myWriter;
+    private CoucheTransportServeur transportServeur;
 
     public CoucheApplication(){
 
@@ -16,6 +17,9 @@ public class CoucheApplication {
         this.destinationIP = destIP;
     }
 
+    public void lierCoucheTransportServeur(CoucheTransportServeur serveur){
+        transportServeur = serveur;
+    }
     /***
      * Fonction qui permet de de prendre en argument soit juste le nom du fichier ou encore un URL contenant le répertoire
      * @param nomFichier
@@ -60,26 +64,42 @@ public class CoucheApplication {
         return donnees;
     }
 
+    public void reinitialiserCouche(){
+        transportServeur.reinitialiser();
+    }
+
     public void writeInFile(String[] donnees) {
-        try {
-            myWriter = new FileWriter("exampleFile.txt",true);
-        } catch (IOException e) {
-            e.printStackTrace();
+        boolean quelqueChoseEcrit = true;
+        for(int i = 0; i< donnees.length; i++){
+            if (donnees[i] == null){
+                quelqueChoseEcrit = false;
+            }
         }
-        for (int i = 0; i < donnees.length; i++) {
+
+        if(quelqueChoseEcrit == true){
             try {
-                if (i != 0) {
-                    myWriter.append(donnees[i]);
-                } else {
-                    Date date = new Date();
-                    myWriter.append(date.toString() + "\n");
-                    myWriter.append("Name of the file : " + donnees[i] + "\n");
-                }
+                myWriter = new FileWriter("exampleFile.txt",true);
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            for (int i = 0; i < donnees.length; i++) {
+                try {
+                    if (i != 0) {
+                        myWriter.append(donnees[i]);
+                    } else {
+                        Date date = new Date();
+                        myWriter.append(date.toString() + "\n");
+                        myWriter.append("Name of the file : " + donnees[i] + "\n");
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            closeFile();
         }
-        closeFile();
+
+        reinitialiserCouche();
+
     }
 
     public void closeFile(){

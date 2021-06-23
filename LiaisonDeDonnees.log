@@ -1,1185 +1,148 @@
-<<<<<<< HEAD
-juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:19:57 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:19:57 A.M. CoucheLiaison recevoirPaquet
-=======
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100090480Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : C:\Users\Simon\Desktop\Université\S3\APP3\test2
-
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200092000Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
->>>>>>> main
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000100152001Le paquet doit être renvoye
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
 INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
 Daddy, why doesn't this magnet pick up this floppy disk?
 Give me ambiguity or give me something else.
 I.R.S.: We've got what it takes to take what yo
 
-<<<<<<< HEAD
-juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:19:57 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000100150140Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : one-liners.txt
 
-juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:19:57 A.M. CoucheLiaison recevoirPaquet
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000100150140Le paquet a déjà été reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : one-liners.txt
+
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000200152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
+Daddy, why doesn't this magnet pick up this floppy disk?
+Give me ambiguity or give me something else.
+I.R.S.: We've got what it takes to take what yo
+
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000300152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
 INFO: Message reçu par le serveur : u've got!
 We are born naked, wet and hungry. Then things get worse.
 Make it idiot proof and someone will make a better idiot.
 He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:19:57 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:19:57 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:19:57 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:32:17 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:32:17 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:32:17 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:32:17 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:32:17 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:32:17 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:32:17 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:32:17 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:32:17 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:32:17 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:32:17 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:32:17 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:32:17 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:33:56 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:33:56 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:33:56 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:33:56 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:33:56 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:33:56 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:33:56 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:33:56 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:33:56 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:33:56 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:33:56 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:33:56 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:33:56 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:35:48 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:35:48 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:35:48 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:35:48 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:35:48 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:35:48 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:35:48 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:35:48 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:35:48 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:35:48 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:35:48 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:35:48 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:35:48 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:43:02 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:48:01 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:48:01 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:48:01 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:48:01 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:48:01 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:48:01 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:48:01 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:48:01 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:48:01 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:48:01 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032002La connexion est perdue
-juin 22, 2021 11:48:01 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:54:03 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:54:03 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:54:03 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:54:03 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:54:03 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:54:03 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:54:03 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:54:03 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:54:03 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:54:03 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032002La connexion est perdue
-juin 22, 2021 11:54:03 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:56:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:56:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:56:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:56:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:56:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:56:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:56:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:56:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:56:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:56:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032002La connexion est perdue
-juin 22, 2021 11:56:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:57:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:57:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:57:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:57:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:57:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:57:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:57:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:57:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:57:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:57:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032002La connexion est perdue
-juin 22, 2021 11:57:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:57:20 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:57:20 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:57:20 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:57:20 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:57:20 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:57:20 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:57:20 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:57:20 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:57:20 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:57:20 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032002La connexion est perdue
-juin 22, 2021 11:57:20 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:59:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 11:59:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 11:59:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:59:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 11:59:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 11:59:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 11:59:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 11:59:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 11:59:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 11:59:05 A.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032002La connexion est perdue
-juin 22, 2021 11:59:05 A.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:03:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 12:03:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:03:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:03:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:03:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:03:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 12:03:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:03:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 12:03:15 P.M. CoucheLiaison recevoirPaquet
-=======
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300092000Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
->>>>>>> main
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-<<<<<<< HEAD
-
-
-
-
-juin 22, 2021 12:03:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032002La connexion est perdue
-juin 22, 2021 12:03:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:05:45 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100010091Le paquet doit être renvoye
-juin 22, 2021 12:05:46 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100010090Le paquet a ete reçu
-juin 22, 2021 12:05:46 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.xtx
-
-juin 22, 2021 12:08:32 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 12:08:32 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:08:32 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:08:32 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:08:32 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:08:32 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 12:08:32 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:11:42 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:11:42 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:11:42 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:11:42 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:11:42 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 12:11:42 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:21:53 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 12:21:53 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:21:53 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:21:53 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:21:53 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:21:53 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:21:53 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000000030091Le paquet doit être renvoye
-juin 22, 2021 12:21:53 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:23:08 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:23:08 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:23:08 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:23:08 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:23:08 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000000030091Le paquet doit être renvoye
-juin 22, 2021 12:23:08 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:29:29 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:29:29 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:29:29 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:29:29 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:29:29 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 12:29:29 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:29:29 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:29:29 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:29:29 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 12:29:29 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:30:41 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 12:30:41 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:30:41 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:30:41 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:30:41 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:30:41 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 12:30:41 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:30:41 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 12:30:41 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:30:41 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032002La connexion est perdue
-juin 22, 2021 12:30:41 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:33:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 12:33:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:33:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:33:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:33:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:33:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 12:33:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:33:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200031691Le paquet doit être renvoye
-juin 22, 2021 12:33:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:33:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:33:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:35:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 12:35:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:35:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:35:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:35:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:35:15 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 12:35:15 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:36:12 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 12:36:12 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:36:12 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:36:12 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:36:12 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:36:12 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 12:36:12 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:36:43 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:36:43 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:36:43 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:36:43 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:36:43 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 12:36:43 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:37:48 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000600152001Le paquet doit être renvoye
-juin 22, 2021 12:37:48 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur :  don't suffer from insanity. I enjoy every minute of it.
-Better to understand a little than to misunderstand a lot.
-The gene pool could use a little chlorine.
-When there's a will, I want to be in i
-
-juin 22, 2021 12:37:48 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000500152001Le paquet doit être renvoye
-juin 22, 2021 12:37:48 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : beam down my clothes."
-Puritanism: The haunting fear that someone, somewhere may be happy.
-Consciousness: that annoying time between naps.
-Don't take life too seriously, you won't get out alive.
-I
-
-juin 22, 2021 12:37:48 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000400152001Le paquet doit être renvoye
-juin 22, 2021 12:37:48 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur :  F1 to continue.
-There's too much blood in my caffeine system.
-Artificial Intelligence usually beats real stupidity.
-Hard work has a future payoff. Laziness pays off now.
-"Very funny, Scotty. Now 
-
-juin 22, 2021 12:37:48 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000400152002La connexion est perdue
-juin 22, 2021 12:37:48 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur :  like everyone else.
-"More hay, Trigger?" "No thanks, Roy, I'm stuffed!"
-A flashlight is a case for holding dead batteries.
-Lottery: A tax on people who are bad at math.
-Error, no keyboard - press
-
-juin 22, 2021 12:38:54 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:38:54 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:38:54 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:38:54 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:38:54 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000000030091Le paquet doit être renvoye
-juin 22, 2021 12:38:54 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:46:10 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:46:10 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:46:10 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:46:10 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:46:10 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000000030091Le paquet doit être renvoye
-juin 22, 2021 12:46:10 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:49:54 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:49:54 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:49:54 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000000030091Le paquet doit être renvoye
-juin 22, 2021 12:49:54 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:50:34 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 12:50:34 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:50:34 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:50:34 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:50:34 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 12:50:34 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:50:34 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:50:34 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:50:34 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 12:50:34 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:53:08 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 12:53:08 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:53:08 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a déjà été reçu
-juin 22, 2021 12:53:08 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:53:08 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a déjà été reçu
-juin 22, 2021 12:53:08 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 12:55:59 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 12:55:59 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 12:55:59 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 12:55:59 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 12:55:59 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 12:55:59 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 1:07:50 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 1:07:50 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 1:07:50 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 1:07:50 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 1:07:50 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 1:07:50 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 1:08:58 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030091Le paquet doit être renvoye
-juin 22, 2021 1:08:58 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 1:08:58 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 1:08:58 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 1:08:58 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 1:08:58 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 1:08:58 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 1:10:04 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100032001Le paquet doit être renvoye
-juin 22, 2021 1:10:04 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 1:10:04 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a ete reçu
-juin 22, 2021 1:10:04 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 1:10:04 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030090Le paquet a déjà été reçu
-juin 22, 2021 1:10:04 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2.txt
-
-juin 22, 2021 1:10:04 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-juin 22, 2021 1:10:04 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-juin 22, 2021 1:10:04 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-juin 22, 2021 1:10:04 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-juin 22, 2021 1:12:43 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000600152001Le paquet doit être renvoye
-juin 22, 2021 1:12:43 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur :  don't suffer from insanity. I enjoy every minute of it.
-Better to understand a little than to misunderstand a lot.
-The gene pool could use a little chlorine.
-When there's a will, I want to be in i
-
-juin 22, 2021 1:12:43 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000500152001Le paquet doit être renvoye
-juin 22, 2021 1:12:43 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : beam down my clothes."
-Puritanism: The haunting fear that someone, somewhere may be happy.
-Consciousness: that annoying time between naps.
-Don't take life too seriously, you won't get out alive.
-I
-
-juin 22, 2021 1:12:43 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000400152001Le paquet doit être renvoye
-juin 22, 2021 1:12:43 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur :  F1 to continue.
-There's too much blood in my caffeine system.
-Artificial Intelligence usually beats real stupidity.
-Hard work has a future payoff. Laziness pays off now.
-"Very funny, Scotty. Now 
-
-juin 22, 2021 1:12:43 P.M. CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000400152002La connexion est perdue
-juin 22, 2021 1:12:43 P.M. CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur :  like everyone else.
-"More hay, Trigger?" "No thanks, Roy, I'm stuffed!"
-A flashlight is a case for holding dead batteries.
-Lottery: A tax on people who are bad at math.
-Error, no keyboard - press
-
-Jun 22, 2021 10:38:04 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030050Le paquet a ete reçu
-Jun 22, 2021 10:38:04 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2
-
-Jun 22, 2021 10:38:04 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-Jun 22, 2021 10:38:04 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-Jun 22, 2021 10:38:04 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-Jun 22, 2021 10:39:37 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030050Le paquet a ete reçu
-Jun 22, 2021 10:39:37 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2
-
-Jun 22, 2021 10:39:37 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-Jun 22, 2021 10:39:37 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-Jun 22, 2021 10:39:37 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-Jun 22, 2021 10:41:02 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030050Le paquet a ete reçu
-Jun 22, 2021 10:41:02 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2
-
-Jun 22, 2021 10:41:02 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-Jun 22, 2021 10:41:02 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-Jun 22, 2021 10:41:02 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-Jun 22, 2021 10:41:02 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-
-
-
-Jun 22, 2021 10:46:34 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000100030050Le paquet a ete reçu
-Jun 22, 2021 10:46:34 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : test2
-
-Jun 22, 2021 10:46:34 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000200032000Le paquet a ete reçu
-Jun 22, 2021 10:46:34 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : Life is wonderful. Without it we'd all be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what yo
-
-Jun 22, 2021 10:46:34 AM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000300031690Le paquet a ete reçu
-Jun 22, 2021 10:46:34 AM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : u've got!
-We are born naked, wet and hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-
-=======
 Always remember you're unique, just
 
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000400092000Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000400152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
 INFO: Message reçu par le serveur :  like everyone else.
 "More hay, Trigger?" "No thanks, Roy, I'm stuffed!"
 A flashlight is a case for holding dead batteries.
 Lottery: A tax on people who are bad at math.
 Error, no keyboard - press
 
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000500092000Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000500152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
 INFO: Message reçu par le serveur :  F1 to continue.
-There's too much blood in my caffeine system.Tue Jun 22 11:11:20 EDT 2021
-Name of the file : C:\Users\Simon\Desktop\Université\S3\APP3\test2
-Life is wonderful. Without it we'd all
+There's too much blood in my caffeine system.
+Artificial Intelligence usually beats real stupidity.
+Hard work has a future payoff. Laziness pays off now.
+"Very funny, Scotty. Now 
 
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000600092000Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur :  be dead.
-Daddy, why doesn't this magnet pick up this floppy disk?
-Give me ambiguity or give me something else.
-I.R.S.: We've got what it takes to take what you've got!
-We are born naked, wet and 
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000600152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : beam down my clothes."
+Puritanism: The haunting fear that someone, somewhere may be happy.
+Consciousness: that annoying time between naps.
+Don't take life too seriously, you won't get out alive.
+I
 
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000700092000Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : hungry. Then things get worse.
-Make it idiot proof and someone will make a better idiot.
-He who laughs last thinks slowest!
-Always remember you're unique, just like everyone else.
-"More hay, Trigg
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000700152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur :  don't suffer from insanity. I enjoy every minute of it.
+Better to understand a little than to misunderstand a lot.
+The gene pool could use a little chlorine.
+When there's a will, I want to be in i
 
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000800092000Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : er?" "No thanks, Roy, I'm stuffed!"
-A flashlight is a case for holding dead batteries.
-Lottery: A tax on people who are bad at math.
-Error, no keyboard - press F1 to continue.
-There's too much blo
->>>>>>> main
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000800152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : t.
+Okay, who put a "stop payment" on my reality check?
+We have enough youth, how about a fountain of SMART?
+Programming is an art form that fights back.
+"Daddy, what does FORMATTING DRIVE C mean?"
 
-Jun 22, 2021 12:27:49 PM CoucheLiaison envoiReponseAuClient
-INFO: Réponse à renvoyer : 000900090270Le paquet a ete reçu
-Jun 22, 2021 12:27:49 PM CoucheLiaison recevoirPaquet
-INFO: Message reçu par le serveur : od in my caffeine system.
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 000900152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : 
+All wiyht. Rho sritched mg kegtops awound?
+My mail reader can beat up your mail reader.
+Never forget: 2 + 2 = 5 for extremely large values of 2.
+Nobody has ever, ever, EVER learned all of WordPer
+
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 001000152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : fect.
+To define recursion, we must first define recursion.
+Good programming is 99% sweat and 1% coffee.
+Home is where you hang your @
+The E-mail of the species is more deadly than the mail.
+A jou
+
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 001100152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : rney of a thousand sites begins with a single click.
+You can't teach a new mouse old clicks.
+Great groups from little icons grow.
+Speak softly and carry a cellular phone.
+C:\ is the root of all di
+
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 001200152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : rectories.
+Don't put all your hypes in one home page.
+Pentium wise; pen and paper foolish.
+The modem is the message.
+Too many clicks spoil the browse.
+The geek shall inherit the earth.
+A chat ha
+
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 001300152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : s nine lives.
+Don't byte off more than you can view.
+Fax is stranger than fiction.
+What boots up must come down.
+Windows will never cease.   (ed. oh sure...)
+In Gates we trust.    (ed.  yeah righ
+
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 001400152000Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : t....)
+Virtual reality is its own reward.
+Modulation in all things.
+A user and his leisure time are soon parted.
+There's no place like http://www.home.com
+Know what to expect before you connect.
+
+juin 22, 2021 2:28:47 P.M. CoucheLiaison envoiReponseAuClient
+INFO: Réponse à renvoyer : 001500151850Le paquet a ete reçu
+juin 22, 2021 2:28:47 P.M. CoucheLiaison recevoirPaquet
+INFO: Message reçu par le serveur : 
+Oh, what a tangled website we weave when first we practice.
+Speed thrills.
+Give a man a fish and you feed him for a day; teach him to use the Net and he won't bother you for weeks.
 
 
 Jun 22, 2021 1:48:31 PM CoucheLiaison envoiReponseAuClient

@@ -22,6 +22,14 @@ public class CoucheTransportServeur {
         nombreDePaquetsRecus = 0;
     }
 
+    public void reinitialiser(){
+        premiereDemande = true;
+        dernierPaquetRecu = 0;
+        compteurDemande = 0;
+        nombreDePaquetsRecus = 0;
+        listeDePaquet = null;
+    }
+
     public void lierAvecLiaison(CoucheLiaison liaison){
         coucheLiaison = liaison;
     }
