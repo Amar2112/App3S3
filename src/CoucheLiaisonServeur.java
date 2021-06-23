@@ -5,10 +5,9 @@ import java.util.logging.SimpleFormatter;
 import java.util.zip.CRC32;
 import java.util.zip.Checksum;
 
-public class CoucheLiaisonServeur {
+public class CoucheLiaisonServeur implements CoucheLiaison {
     private Boolean stateConnexion;
     private CoucheTransportServeur transport;
-    private CoucheTransport retour;
     private CouchePhysique physique;
     private String reponse;
     private String paquetSortant;
@@ -36,11 +35,6 @@ public class CoucheLiaisonServeur {
     public void lierCouchePhysique(CouchePhysique physique){
         this.physique = physique;
     }
-
-    public void lierCoucheTransport(CoucheTransport transport){
-        this.retour = transport;
-    }
-
     public void lierCoucheTransportServeur(CoucheTransportServeur serveur){
         this.transport = serveur;
     }
@@ -91,12 +85,6 @@ public class CoucheLiaisonServeur {
         logInfo = logInfo.substring(0,logInfo.length()-10);
 
         log.info(logInfo + " envoyé vers : " + adresseString + "\n");
-    }
-
-    public void envoiReponseTransport (String donnees)
-    {
-        donnees.substring(0,donnees.length()-10);
-        retour.retourLiaison(donnees);
     }
 
     public void envoiReponseAuClient(String paquet){

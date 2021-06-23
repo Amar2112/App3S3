@@ -4,7 +4,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class CouchePhysique {
-    private CoucheLiaison liaison;
+    private CoucheLiaisonClient liaison;
     private  DatagramSocket socketReception;
     private DatagramSocket socketEnvoi;
     private boolean paquetMalEnvoye;
@@ -21,7 +21,7 @@ public class CouchePhysique {
         }
     }
 
-    public void lierCoucheLiaison(CoucheLiaison liaison){
+    public void lierCoucheLiaison(CoucheLiaisonClient liaison){
         this.liaison = liaison;
     }
 

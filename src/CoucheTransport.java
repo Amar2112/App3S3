@@ -47,6 +47,10 @@ public class CoucheTransport {
         
     }
 
+    /**
+     * Permet de retourner le paquet à la couche de liaison
+     * @param donnees
+     */
     public void retourLiaison(String donnees){
         if(Integer.parseInt(donnees.substring(11,12)) == 1){
             String paquetARenvoyer = listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1].substring(0,11) + "1" + listePaquetsAEnvoyer[Integer.parseInt(donnees.substring(0,4)) -1].substring(12);

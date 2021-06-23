@@ -5,9 +5,8 @@ import java.util.logging.SimpleFormatter;
 import java.util.zip.CRC32;
 import java.util.zip.Checksum;
 
-public class CoucheLiaisonClient extends CoucheLiaison {
+public class CoucheLiaisonClient implements CoucheLiaison {
     private Boolean stateConnexion;
-    private CoucheTransportServeur transport;
     private CoucheTransport retour;
     private CouchePhysique physique;
     private String reponse;
@@ -41,9 +40,6 @@ public class CoucheLiaisonClient extends CoucheLiaison {
         this.retour = transport;
     }
 
-    public void lierCoucheTransportServeur(CoucheTransportServeur serveur){
-        this.transport = serveur;
-    }
     /**
      * Ajoute le checkSum dans le paquet Sortant
      * @param paquetEntrant
@@ -56,27 +52,6 @@ public class CoucheLiaisonClient extends CoucheLiaison {
         return paquetSortant;
     }
 
-    /**
-     * Envoie à la couche transport
-     * @param paquetEntrant
-     * @return
-     */
-    public void recevoirPaquet(String paquetEntrant){
-        String crc = paquetEntrant.substring((paquetEntrant.length()-10), paquetEntrant.length());
-
-        //paquetEntrant.length()
-        String donnes = paquetEntrant.substring(0, paquetEntrant.length()-10);
-
-        if(compareCRC(donnes,crc)){
-            transport.getFromCoucheLiaison(donnes);
-            System.out.println("Je rentre à bonne place");
-            String logInfo = donnes.substring(12);
-            log.info("Message reçu par le serveur : "+logInfo + "\n");
-        }else{
-
-            transport.demandeRenvoi(paquetEntrant);
-        }
-    }
     /**
      * Envoi le paquet au serveur
      * @param paquetSortant

@@ -1,7 +1,7 @@
 
 
 public class BuilderCouches implements Builder {
-    private CoucheLiaison cL;
+    private CoucheLiaisonClient cLC;
     private CoucheTransport cT;
     private CouchePhysique cP;
 
@@ -10,9 +10,10 @@ public class BuilderCouches implements Builder {
         stepB();
     }
 
+
     @Override
     public void stepA() {
-        cL = new CoucheLiaison();
+        cLC = new CoucheLiaisonClient();
         cT = new CoucheTransport();
         cP = new CouchePhysique();
     }
@@ -20,12 +21,12 @@ public class BuilderCouches implements Builder {
     @Override
     public void stepB() {
         //Liaison de la couche liaison
-        cL.lierCouchePhysique(cP);
-        cL.lierCoucheTransport(cT);
+        cLC.lierCouchePhysique(cP);
+        cLC.lierCoucheTransport(cT);
         //Liaison de la couche physique
-        cP.lierCoucheLiaison(cL);
+        cP.lierCoucheLiaison(cLC);
         //Liaison de la couche transport
-        cT.lierCoucheLiaison(cL);
+        cT.lierCoucheLiaison(cLC);
     }
 
     public void changerCRC(){ cP.paquetMalEnvoye();}

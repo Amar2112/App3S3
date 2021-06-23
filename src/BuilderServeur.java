@@ -1,6 +1,6 @@
 public class BuilderServeur implements Builder{
 
-    private CoucheLiaison liaison;
+    private CoucheLiaisonServeur liaison;
     private CoucheTransportServeur transportServeur;
     private CoucheApplication application;
 
@@ -11,7 +11,7 @@ public class BuilderServeur implements Builder{
 
     @Override
     public void stepA() {
-        this.liaison = new CoucheLiaison();
+        this.liaison = new CoucheLiaisonServeur();
         this.transportServeur = new CoucheTransportServeur();
         this.application = new CoucheApplication();
     }
