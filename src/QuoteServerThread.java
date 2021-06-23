@@ -30,18 +30,11 @@
  */
 import java.io.*;
 import java.net.*;
-import java.nio.charset.StandardCharsets;
-import java.util.*;
 
 public class QuoteServerThread extends Thread {
 
     protected DatagramSocket socket = null;
     protected DatagramSocket socketEnvoi = null;
-    protected BufferedReader in = null;
-    protected boolean moreQuotes = true;
-    private CoucheLiaisonServeur liaison;
-    private CoucheTransportServeur transportServeur;
-    private CoucheApplication application;
     private BuilderServeur serveur;
     public QuoteServerThread() throws IOException {
         this("QuoteServerThread");
@@ -56,7 +49,6 @@ public class QuoteServerThread extends Thread {
 
 
     public void run() {
-        boolean finDeLaTransmission = true;
         try{
 
         byte[] buf = new byte[256];
@@ -64,21 +56,15 @@ public class QuoteServerThread extends Thread {
             DatagramPacket packet = new DatagramPacket(buf, buf.length);
             while(true){
                 socket.receive(packet);
-                System.out.println("Avant Envoi -------------------------------");
-                //System.out.println("Avant le if"+new String(packet.getData(),0,packet.getLength()));
                 serveur.recevoirPaquet(new String(packet.getData(),0,packet.getLength()));
 
                 String donneesEnvoyer = serveur.getReponseClient();
                     if(donneesEnvoyer != null){
-                        if(Integer.parseInt(donneesEnvoyer.substring(11,12)) ==2){
-                        //finDeLaTransmission = false;
-                    }
+
                         socketEnvoi.connect(packet.getAddress(), 25501);
                         byte [] transformationDonnees = donneesEnvoyer.getBytes();
                         DatagramPacket paquetEnvoyer = new DatagramPacket(transformationDonnees, transformationDonnees.length, packet.getAddress(), 25501);
                         socketEnvoi.send(paquetEnvoyer);
-                        System.out.println("Après Envoi -------------------------------");
-
                     }
             }
 

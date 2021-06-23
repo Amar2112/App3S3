@@ -32,10 +32,18 @@ public class CoucheLiaisonClient implements CoucheLiaison {
         reponse = null;
     }
 
+    /**
+     * Instancie la couche physique
+     * @param physique
+     */
     public void lierCouchePhysique(CouchePhysique physique){
         this.physique = physique;
     }
 
+    /**
+     * Instancie la couche transport
+     * @param transport
+     */
     public void lierCoucheTransport(CoucheTransport transport){
         this.retour = transport;
     }
@@ -48,7 +56,6 @@ public class CoucheLiaisonClient implements CoucheLiaison {
     public String populerPaquet(String paquetEntrant)
     {
         String paquetSortant = paquetEntrant + checkSum(paquetEntrant.getBytes());
-        System.out.println("Avec le crc " + paquetSortant);
         return paquetSortant;
     }
 
@@ -68,14 +75,21 @@ public class CoucheLiaisonClient implements CoucheLiaison {
         log.info(logInfo + " envoyé vers : " + adresseString + "\n");
     }
 
+    /**
+     * Envoi la reponse à la couche transport
+     * @param donnees
+     */
     public void envoiReponseTransport (String donnees)
     {
         donnees.substring(0,donnees.length()-10);
         retour.retourLiaison(donnees);
     }
 
+    /**
+     * Envoi la reponse au client
+     * @param paquet
+     */
     public void envoiReponseAuClient(String paquet){
-        System.out.println("Reponse à renvoyer"+paquet);
         log.info("Réponse à renvoyer : " + paquet);
         reponse = paquet;
     }
@@ -108,6 +122,12 @@ public class CoucheLiaisonClient implements CoucheLiaison {
         return stringCheckSum;
     }
 
+    /**
+     * Compare les crc
+     * @param donnees les donnees recues
+     * @param crcClient le crc des donnees recues
+     * @return
+     */
     public Boolean compareCRC(String donnees, String crcClient){
         if(crcClient.equals(checkSum(donnees.getBytes()))){
             return true;
@@ -115,10 +135,17 @@ public class CoucheLiaisonClient implements CoucheLiaison {
         return false;
     }
 
+    /**
+     * Coupe la connexion avec le client
+     */
     public void couperConnexion(){
         stateConnexion = false;
     }
 
+    /**
+     * Renvoie l'état de la connexion avec le client
+     * @return
+     */
     public Boolean getStateConnexion() {
         return stateConnexion;
     }

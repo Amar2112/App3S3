@@ -21,26 +21,33 @@ public class CouchePhysique {
         }
     }
 
+    /**
+     * Lier la couche liaison de la couche physique
+     * @param liaison
+     */
     public void lierCoucheLiaison(CoucheLiaisonClient liaison){
         this.liaison = liaison;
     }
 
     /**
-     * Active la booléenne
+     * Active la booléenne pour mettre un mauvais crc
      */
     public void paquetMalEnvoye(){
         paquetMalEnvoye = true;
     }
 
+    /**
+     * Envoi le paquet au serveur
+     * @param paquet
+     * @param adresse
+     */
     public void EnvoiServeur(String paquet, String adresse){
         try{
             InetAddress address = InetAddress.getByName(adresse);
 
             if (paquetMalEnvoye && Integer.parseInt(paquet.substring(0,4)) == 1 && Integer.parseInt(paquet.substring(11,12)) == 0 ){
-                System.out.println("Le paquet envoye intended "+ paquet);
                 paquet = paquet.replaceFirst("[e]", "s");
             }
-            System.out.println("Le paquet envoye "+ paquet);
             //Transformation en bytes
             byte[] buf =  paquet.getBytes();
 
@@ -58,6 +65,9 @@ public class CouchePhysique {
         }
     }
 
+    /**
+     * Attends la reception du message
+     */
     public void receptionMessage(){
         byte[] buf = new byte[256];
         DatagramPacket packetReception = new DatagramPacket(buf, buf.length);

@@ -38,21 +38,22 @@ import java.util.logging.SimpleFormatter;
 
 public class QuoteClient {
 
-
+    /**
+     * Ecrire dans les arguments le path du fichier et le nom de l'ordinateur
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         BuilderApplicationScan appScan = new BuilderApplicationScan();
 
         Tests tests = new Tests();
-<<<<<<< Updated upstream
-        tests.testQuiMarche(appScan);
-=======
-        tests.testCRCMarchePas(appScan);
->>>>>>> Stashed changes
 
-        //String message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit justo nisl, sit amet convallis lectus facilisis at. Sed ultrices lobortis dapibus. Nam scelerisque eros volutpat, cursus dui vel, feugiat nisl. Morbi diam enim, tempus vel eros sed, vestibulum blandit mi. Maecenas semper turpis.";
-        //String nomFichier = "la vie va bien";
-        //coucheTransport.envoiLiaison(message, nomFichier, args[0]);
+        //tests.testQuiMarche(appScan);
 
+        //tests.testCRCMarchePas(appScan);
 
+        //tests.testEnvoiPasBonOrdre(appScan);
+
+        tests.test3Erreurs(appScan);
     }
 }

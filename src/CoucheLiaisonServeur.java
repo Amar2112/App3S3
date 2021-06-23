@@ -32,9 +32,18 @@ public class CoucheLiaisonServeur implements CoucheLiaison {
         reponse = null;
     }
 
+    /**
+     * Instancier la couche physique
+     * @param physique
+     */
     public void lierCouchePhysique(CouchePhysique physique){
         this.physique = physique;
     }
+
+    /**
+     * Instancie la couche transport
+     * @param serveur
+     */
     public void lierCoucheTransportServeur(CoucheTransportServeur serveur){
         this.transport = serveur;
     }
@@ -46,7 +55,6 @@ public class CoucheLiaisonServeur implements CoucheLiaison {
     public String populerPaquet(String paquetEntrant)
     {
         String paquetSortant = paquetEntrant + checkSum(paquetEntrant.getBytes());
-        System.out.println("Avec le crc " + paquetSortant);
         return paquetSortant;
     }
 
@@ -63,7 +71,6 @@ public class CoucheLiaisonServeur implements CoucheLiaison {
 
         if(compareCRC(donnes,crc)){
             transport.getFromCoucheLiaison(donnes);
-            System.out.println("Je rentre à bonne place");
             String logInfo = donnes.substring(12);
             log.info("Message reçu par le serveur : "+logInfo + "\n");
         }else{
@@ -87,12 +94,19 @@ public class CoucheLiaisonServeur implements CoucheLiaison {
         log.info(logInfo + " envoyé vers : " + adresseString + "\n");
     }
 
+    /**
+     * Envoi la bonne reponse à renvoyer
+     * @param paquet
+     */
     public void envoiReponseAuClient(String paquet){
-        System.out.println("Reponse à renvoyer"+paquet);
         log.info("Réponse à renvoyer : " + paquet);
         reponse = paquet;
     }
 
+    /**
+     * Getter du acknowledge
+     * @return
+     */
     public String getReponseClient(){
         return reponse;
     }
@@ -121,6 +135,12 @@ public class CoucheLiaisonServeur implements CoucheLiaison {
         return stringCheckSum;
     }
 
+    /**
+     * Compare les 2 crc
+     * @param donnees les donnees du client
+     * @param crcClient le crc du client
+     * @return
+     */
     public Boolean compareCRC(String donnees, String crcClient){
         if(crcClient.equals(checkSum(donnees.getBytes()))){
             return true;
@@ -128,10 +148,17 @@ public class CoucheLiaisonServeur implements CoucheLiaison {
         return false;
     }
 
+    /**
+     * Coupe la connexion avec le client
+     */
     public void couperConnexion(){
         stateConnexion = false;
     }
 
+    /**
+     * Getter de l'état de la connexion
+     * @return
+     */
     public Boolean getStateConnexion() {
         return stateConnexion;
     }

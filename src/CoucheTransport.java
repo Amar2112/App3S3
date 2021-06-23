@@ -40,7 +40,6 @@ public class CoucheTransport {
 
 
         while(compteur < paquetsAEnvoyer.length && reception){
-            System.out.println(paquetsAEnvoyer[compteur]);
             liaison.envoyerPaquetServeur(paquetsAEnvoyer[compteur], adresse);
             compteur++;
         }
@@ -49,7 +48,7 @@ public class CoucheTransport {
 
     /**
      * Permet de retourner le paquet à la couche de liaison
-     * @param donnees
+     * @param donnees 0 pour acceptee, 1 pour renvoie et 2 pour connexion perdue
      */
     public void retourLiaison(String donnees){
         if(Integer.parseInt(donnees.substring(11,12)) == 1){
@@ -57,14 +56,19 @@ public class CoucheTransport {
             liaison.envoyerPaquetServeur(paquetARenvoyer, adresse);
         }else if(Integer.parseInt(donnees.substring(11,12)) == 2) {
             reception = false;
-            System.out.println("Reception" + reception);
         }
     }
 
+    /**
+     * Trigger d'une erreur qui coupe la connexion avec le client, il faut que le texte ait plus que 1200 bytes
+     */
     public void triggerErreur3Fois(){
         troisErreurs = true;
     }
 
+    /**
+     * Envoi le paquet numero 2 en premier
+     */
     public void envoiInverse(){ envoiInverse = true;}
 
     /**
@@ -107,7 +111,6 @@ public class CoucheTransport {
     public String[] paquetFragmenteEntete(String paquetEntrant, String fichierNom) {
         int nombrePaquetAFragmenter = nombrePaquet(paquetEntrant) + 1;
 
-        System.out.println("Paquet fragmente"+ nombrePaquetAFragmenter);
         //Contient tous les paquets à envoyer avec l'entête et le nom du fichier
         String paquetsFragementesListe[] = new String[nombrePaquetAFragmenter];
 
@@ -153,8 +156,6 @@ public class CoucheTransport {
             if (nombrePaquetAFragmenter - 1 == i){
                 if(3 - String.valueOf(paquetsSansEntete[i - 1].getBytes().length).length() != 0) {
                     String nombreDeDigitsFragmentTaille = "%0" + (3) + "d";
-                    System.out.println(nombreDeDigitsFragmentTaille);
-                    System.out.println(fichierNom.getBytes().length);
 
                     enteteLongueurFichierFragment = String.format(nombreDeDigitsFragmentTaille, paquetsSansEntete[i - 1].getBytes().length);
                 }

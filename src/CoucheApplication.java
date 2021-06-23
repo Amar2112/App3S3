@@ -17,6 +17,10 @@ public class CoucheApplication {
         this.destinationIP = destIP;
     }
 
+    /**
+     * Instancier la couche transport du serveur
+     * @param serveur
+     */
     public void lierCoucheTransportServeur(CoucheTransportServeur serveur){
         transportServeur = serveur;
     }
@@ -64,12 +68,15 @@ public class CoucheApplication {
         return donnees;
     }
 
+    /**
+     * Réinitialise le tableau des données et les variables
+     */
     public void reinitialiserCouche(){
         transportServeur.reinitialiser();
     }
 
     /**
-     * Permet d'écrire dans le fichier physique ce que nous avons reçu comme message.
+     * Ecrit dans le fichier physique ce que nous avons reçu comme message.
      * @param donnees Contient le nom du fichier reçu ainsi que son contenu.
      */
     public void writeInFile(String[] donnees) {
@@ -107,7 +114,7 @@ public class CoucheApplication {
     }
 
     /**
-     * Permet de fermer le fichier pour bien enregistrer le contenu.
+     * Ferme le fichier pour bien enregistrer le contenu.
      */
     public void closeFile(){
         try {

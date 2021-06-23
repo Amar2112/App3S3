@@ -22,6 +22,9 @@ public class CoucheTransportServeur {
         nombreDePaquetsRecus = 0;
     }
 
+    /**
+     * Reinitialise les valeurs pour les erreurs à leur état initial et vide le tableau des donnees
+     */
     public void reinitialiser(){
         premiereDemande = true;
         dernierPaquetRecu = 0;
@@ -30,6 +33,10 @@ public class CoucheTransportServeur {
         listeDePaquet = null;
     }
 
+    /**
+     * Instncie liaison
+     * @param liaison
+     */
     public void lierAvecLiaison(CoucheLiaisonServeur liaison){
         coucheLiaison = liaison;
     }
@@ -50,6 +57,10 @@ public class CoucheTransportServeur {
         coucheLiaison.envoiReponseAuClient(renvoi);
     }
 
+    /**
+     * Renvoie que la connexion est perdue au client
+     * @param paquetDemande
+     */
     public void demandeConnexionPerdue(String paquetDemande){
         String renvoi = paquetDemande.substring(0,11) + "2" + "La connexion est perdue";
         coucheLiaison.envoiReponseAuClient(renvoi);
@@ -96,8 +107,6 @@ public class CoucheTransportServeur {
     public void TraiterPaquetEnvoi(String paquet){
         int paquetActuel = Integer.parseInt(paquet.substring(0,4));
 
-        System.out.println("Ce que ça devrait être" + paquetActuel);
-        System.out.println("Dernier paquet recu " + dernierPaquetRecu);
 
         if(listeDePaquet[Integer.parseInt(paquet.substring(0,4)) -1] != null ) {
             String acknowledge = paquet.substring(0,11) + "0" + "Le paquet a déjà été reçu" ;
@@ -118,7 +127,6 @@ public class CoucheTransportServeur {
                         String nombreDeDigitsPaquetDebut = "%0" + (4) + "d";
                         numeroPaquetDebut = String.format(nombreDeDigitsPaquetDebut, Integer.parseInt(paquet.substring(0,4)) -1);
                     }
-                    System.out.println("Le paquet à renvoyer " + numeroPaquetDebut);
                     paquet = numeroPaquetDebut + paquet.substring(4,paquet.length());
                     demandeRenvoi(paquet);
                 }
